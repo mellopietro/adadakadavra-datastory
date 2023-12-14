@@ -4,7 +4,7 @@ title: Trump and COVID19
 ---
 
 <div class="title-background">
-    <img src="assets/images/title.jpg" alt="Title Background Image">
+    <img src="assets/images/title.jpg" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
 
 # Introduction
@@ -38,7 +38,7 @@ The COVID-19 pandemic has been a harrowing experience for humanity, but it has a
 During state quarantines and lockdowns, people were forced to stay at home, leading to a sharp decline in mobility. This was reflected in a drop in traffic congestion, public transportation usage, and retail foot traffic. For example, data from Apple Mobility Trends showed a 95% decrease in visits to retail and recreation categories in New York City during the peak of the pandemic.
 
 <div class="mobility">
-    <img src="assets/images/preview_mobility.png">
+    <img src="assets/images/preview_mobility.png" style="display: block; margin: 0 auto; width: 60%;"/>
 </div>
 
 ### Internet Consumption
@@ -46,7 +46,7 @@ During state quarantines and lockdowns, people were forced to stay at home, lead
 In contrast, internet consumption skyrocketed during state quarantines. As people were spending more time at home, they turned to the internet for work, education, entertainment, and communication. This led to increased traffic on websites, social media platforms, and video streaming services. For instance, Zoom's daily user meetings increased from 10 million in December 2019 to 300 million in April 2020, demonstrating the surge in remote work and online communication during the pandemic.
 
 <div class="internet">
-    <img src="assets/images/preview_internet.png">
+    <img src="assets/images/preview_internet.png" style="display: block; margin: 0 auto; width: 60%;"/>
 </div>
 
 The increase in internet usage also highlighted the importance of reliable internet connectivity. Many people found themselves struggling to access high-speed internet, which hindered their ability to work, learn, and stay connected with loved ones. This underscored the need for improved internet infrastructure and equitable access to broadband services.
