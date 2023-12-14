@@ -33,9 +33,11 @@ github_username:  jekyll
 background-image: url('assets/images/title.jpg')
 
 # Build settings
-theme: beautiful-jekyll-theme
+# theme: beautiful-jekyll-theme
+remote_theme: daattali/beautiful-jekyll@6.0.1
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
