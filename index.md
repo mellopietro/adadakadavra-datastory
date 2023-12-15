@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Trump and COVID19
+subtitle: Adadakadavra Team
 ---
 
 <div class="title-background">
