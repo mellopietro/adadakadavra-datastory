@@ -34,7 +34,9 @@ person to be influential on Twitter, who would it be?
 
 I don't know who you got in mind, but for us, it has to be Donald Trump. Before he was evicted from the network, he was
 one of the most followed account (source?). If you don't remind his tweet's style, here is a refresher :
-<img src="images/trump_sample_tweet.png">
+<div class="internet">
+    <img src="assets/img/trump_sample_tweet.png.png" style="display: block; margin: 0 auto; width: 60%;"/>
+</div>
 We all know Donald Trump has spread fake news, especially on Twitter, his favorite communication channel.
 
 TO MERGE :
