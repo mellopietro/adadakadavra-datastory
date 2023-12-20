@@ -4,23 +4,35 @@ title: Trump and COVID19
 subtitle: Adadakadavra Team
 ---
 
-# Context
-
 <div class="title-background">
     <img src="assets/img/title.jpg" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
 
+# Context
 
-Remember the beginning of 2020, Covid spread like an unprecedent wildfire. The disease was not unkwnon, not understood
+Remember the beginning of 2020, Covid spread like an unprecedent wildfire. The disease was unkwnon, not understood
 and scary. Most of the countries decided to lockdown to stop the spread and protect their populations. This resulted in
-major and global changepoints in mobility :
+major and global changepoints in mobility:
 
-ADD PLOTS ABOUT THE MOBILITY
+<div class="mobility-report">
+    <img src="assets/img/mobility.png" style="display: block; margin: 0 auto; width: 80%;"/>
+</div>
+
+Two distinct patterns emerged, distinguishing between weekdays and weekends. 
+On weekdays, a majority of businesses either had to close or transition to telecommuting. This impact persisted beyond the lockdown period, as indicated by the data. 
+Conversely, weekends also experienced disruption, but this effect diminished to near pre-restriction levels after the restrictions were lifted.
+We are particularly interested in studying this second part, as during the weekend, people were not working but had free time to engage in various activities.
 
 This time at home was ideal for cooking, watching cat videos (or play with your cats) and spending time on the internet.
 Interestingly, the global internet traffic followed the mobility evolutions:
 
-ADD PLOT AND CORRELATION THERE
+<div class="mobility-report">
+    <img src="assets/img/wikipedia_usage.png" style="display: block; margin: 0 auto; width: 80%;"/>
+</div>
+
+Notably, while the time spent at home witnessed a more significant increase on weekdays, the surge in web searches, estimated by the number of wikipedia searches, was more pronounced during weekends. This is expected, considering that weekdays were still occupied by telecommuting activities.
+
+A linear regression analysis supports this observation. When regressing the number of web searches against the time spent at home, the weekends exhibit a substantially higher coefficient of 2.52, in contrast to the coefficient of 0.84 observed during the week.
 
 Main area of searched topics has been studied, you can have a look to : .. . But internet traffic during covid time was
 not only made of cooking recipes and cats, it also was a proper time for fake news propagation, or as
