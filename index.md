@@ -246,13 +246,14 @@ Below, we present the regression results in the following table.
 |peopl_sent             | 4.8260   |  2.069    | 2.333  |  0.020 |  0.771 |  8.881 |
 |increase_new_cases     |-1.9933   |  0.875    |-2.277  |  0.023 | -3.709 | -0.278 |
 
-We now want to assess the robustness of our logistic regression, we compute the confusion Matrix, the accuracy, the precision and the recall of our model. We obtain the following results:
+We now want to assess the robustness of our logistic regression, we compute the confusion Matrix, the ROC curve and the AUC score.
 
-| Confusion Matrix                    | ROC curve & AUC                     |
-| ----------------------------------- | ----------------------------------- |
-| ![output_mat](image/output_mat.png) | ![output_roc](image/output_roc.png) |
+<div class="internet">
+    <img src="assets/img/comb.png" style="display: block; margin: 0 auto; width: 60%;"/>
+</div>
 
-
+The results obtained are promising, demonstrating both precision and recall values at 0.8. This indicates the logistic regression model's ability to effectively predict the sentiment in Trump's tweets. Our analysis was conducted within a month-long window, aligning with the peak period of interest in Trump's tweets about Covid-19.
+The regression analysis used aggregated daily data, providing a more stable viewpoint compared to the volatility inherent in individual tweets. However, extending this analysis over a more extended period might not work. As time progresses, Trump's interest in Covid topic decline, resulting in a scarcity of daily data.
 
 
 ## What makes Donald Trump retweeted?
