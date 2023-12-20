@@ -213,11 +213,11 @@ So far we lack to find a causal link between Trump's tweets and general online t
 
 To comprehend the general sentiment within Trump's tweets, we utilized VADER, a rule-based sentiment analyzer specific for social media text. Each tweet is assigned a score calculated as the aggregate of individual word scores within the text. Our analysis will focus on compound score, which is a combination of positive, negative, and neutral scores.
 
-Our findings indicate a predominately positive sentiment in Trump's tweets. This observation could have two potential explnations:
+Our findings indicate a predominately **positive sentiment** in Trump's tweets. This observation could have two potential explnations:
 - As a politician, Trump might be inclined to emphasize positive events over negative ones in his tweets.    Highlighting favorable occurrences concerning himself could serve as a making a case for voting himself.
 - The VADER lexicon might be inaccurate capturing the sentiment the sarcastic tweets. Despite VADER's focus on social media language, discerning sarcasm remains a challenging task, potentially introducing biases in the analysis.
 
-Our strategy to assess VADER's capability to interpret Trump's sentiment consists on focusing on tweets related to Joe Biden and Democrats. We expect a negative sentiment given that they are the main target of Trump's tweets. Yet, upon observing the plotted data, while a slight shift in sentiment distribution is evident, the dominant sentiment remains positive. We should be careful further proceeding in our analysis since sarcasm could alter our results.
+Our strategy to assess VADER's capability to interpret Trump's sentiment consists on focusing on tweets related to **Joe Biden** and Democrats. We expect a **negative sentiment** given that they are the main target of Trump's tweets. Yet, upon observing the plotted data, while a slight shift in sentiment distribution is evident, the dominant sentiment remains positive. We should be careful further proceeding in our analysis since sarcasm could alter our results.
 Interestingly, looking at the graph below,  only tweets associated with fake news in relation to COVID-19 exhibit a notably strong negative sentiment. This aligns with expectations since Trump's tweets concerning fake news usually serve as attacks directed at Democrats, the establishment, and the media.
 
 <div class="internet">
@@ -232,9 +232,9 @@ our analyzer might not get:
 This reminds us to remain careful with our results concerning sentiment types.## I WOULD ELIMINATE
 
 ### Step 2: Logisisitc regression on Trump's sentiment
-We want to look for reasonable predictors of Trump's sentiment. As stated before, we consider as predictors the general sentiment among population, computed as the mean of compounded score of daily tweets, and the rise in new COVID-19 cases. Our focus was on a specific timeframe spanning from March 19, 2020, to April 18, 2020, considering the spread of COVID-19 and Twitter activity within the US.
+We want to look for reasonable predictors of Trump's sentiment. As stated before, we consider as predictors the general sentiment among population, computed as the mean of **compounded score** of daily tweets, and the rise in new COVID-19 cases. Our focus was on a specific timeframe spanning from March 19, 2020, to April 18, 2020, considering the spread of COVID-19 and Twitter activity within the US.
 
-Initially, we conducted separate regressions, regressing Trump's sentiment on each predictor individually. Both predictors exhibited significance at a 5% level. Subsequently, taking a step forward, we incorporated both predictors into the regression model. Notably, we retained the expected sign of the coefficients, and the p-values reduced compared to the single-predictor regressions. Moreover, with both predictors included, the coefficients attained significance at a 2.5% level.
+Initially, we conducted separate regressions, regressing Trump's sentiment on each predictor individually. Both predictors exhibited significance at a 5% level. Subsequently, taking a step forward, we incorporated both predictors into the regression model. Notably, we retained the expected sign of the coefficients, and the p-values reduced compared to the single-predictor regressions.
 
 Below, we present the regression results in the following table.
 
@@ -248,11 +248,11 @@ Below, we present the regression results in the following table.
 
 We now want to assess the robustness of our logistic regression, we compute the confusion Matrix, the ROC curve and the AUC score.
 
-<div class="internet">
-    <img src="assets/img/comb.png" style="display: block; margin: 0 auto; width: 60%;"/>
+<div class="results">
+    <img src="assets/img/comb.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
-The results obtained are promising, demonstrating both precision and recall values at 0.8. This indicates the logistic regression model's ability to effectively predict the sentiment in Trump's tweets. Our analysis was conducted within a month-long window, aligning with the peak period of interest in Trump's tweets about Covid-19.
+The results obtained are promising, demonstrating both precision and recall values at 0.8. Our analysis was conducted within a month-long window, aligning with the peak period of interest in Trump's tweets about Covid-19.
 The regression analysis used aggregated daily data, providing a more stable viewpoint compared to the volatility inherent in individual tweets. However, extending this analysis over a more extended period might not work. As time progresses, Trump's interest in Covid topic decline, resulting in a scarcity of daily data.
 
 
