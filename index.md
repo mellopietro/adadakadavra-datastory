@@ -254,6 +254,7 @@ We now want to assess the robustness of our logistic regression, we compute the 
 
 
 
+
 ## What makes Donald Trump retweeted?
 
 We have seen than Donald Trump is usually not a trendmaker, but more of a trendfollower. Still, he propagates the trend.
