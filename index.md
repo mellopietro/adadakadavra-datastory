@@ -70,12 +70,13 @@ Covid related tweets are slightly more polrized than the overall sample and show
 ### Step 2: Logisisitc regression on Trump's sentiment
 We want to look for reasonable predictors of Trump's sentiment. As stated before we consider as predictors the general sentiment among population in US and the increment of new cases of Covid-19 in US. At first we regress Trump's sentiment on the predictors separetedly and both of them are significant at 5% level. We try to make a step further and we include both of them in the regression. We find more polarized regression coeeficients and even the p-values are lower, the coefficient are significative at 1% level. In the following we report a table with the coefficient of regressions
 
-#### Logistic regression regression table
-|                       | Coef     | Std error | t-stat | p-val  | [0.025   0.975]  |
-| :----------------     | :------: | :--------:|:------:| :-----:| :-----:  :-----: |
-|Intercept              |-1.2070   |  0.679    |-1.777  |  0.076 |  -2.538    0.124 |
-|peopl_sent             | 4.8260   |  2.069    | 2.333  |  0.020 |   0.771    8.881 |
-|increase_new_cases     |-1.9933   |  0.875    |-2.277  |  0.023 |  -3.709   -0.278 |
+#### Logistic regression (Trump's sentiment ~ general sentiment + increment of new cases)
+
+|                       | Coef     | Std error | t-stat | p-val  | [0.025 | 0.975] |
+| :----------------     | :------: | :--------:|:------:| :-----:| :-----:  :-----:|
+|Intercept              |-1.2070   |  0.679    |-1.777  |  0.076 | -2.538 |  0.124 |
+|peopl_sent             | 4.8260   |  2.069    | 2.333  |  0.020 |  0.771 |  8.881 |
+|increase_new_cases     |-1.9933   |  0.875    |-2.277  |  0.023 | -3.709 | -0.278 |
 
 ## Donald Trump's tweets
 
