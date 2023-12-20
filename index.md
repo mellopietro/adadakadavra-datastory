@@ -199,13 +199,14 @@ So far we lack to find a causal link between Trump's tweets and general online t
     <img src="assets/img/sentiment_pie_chart.png" style="display: block; margin: 0 auto; width: 60%;"/>
 </div>
 
-First of all we want to generally understand the general sentiment of Trump's tweets. We use VADER as rule based sentiment analyzer to assess Trump's sentiment. Vader is a NLTK module specific to social media text. For each tweet a score computed as the sum of the scores of the words in the text. The are three scores: positive, negative an neutral, however in our analysis we considered a **compound score** which is a normalized weighted composite score.
-We found taht the general sentiment of Trump's tweets is positive,there could be two reasons for this:
-- The first one is that, as a politician, Trump is more likely to tweet about positive events than negative ones. Bringing up to surface and enphatizing positive events about himslef is a way to get consensus.
-- The second one is that the VADER lexicon is not able to capture the sentiment of the tweets. Or at least the sarcastic ones. Even if Vader is specific for social media, the sarcasm detection is something pretty difficult to achieve, hence there could be some bias due to the high number of sarcastic tweets.
+To comprehend the general sentiment within Trump's tweets, we utilized VADER, a rule-based sentiment analyzer specific for social media text. Each tweet is assigned a score calculated as the aggregate of individual word scores within the text. Our analysis will focus on compound score, which is a combination of positive, negative, and neutral scores.
 
-Our strategy to check for VADER ability to capture Trump's sentiment is to focus on tweets regarding Joe Biden and democrats. If our analyzer is able to correctly interpret tweets, we expect to find a negative overall sentiment. Looking at the plot below, we can see that there is a slight shift in the sentiment distribution, but the dominant sentiment is still positive. We can conclude that our we should take our results with a grain of salt since VADER misunderstands sarcasm.
-Only fake news related covid tweets have as strong negative sentiment. This is not surprising since Trump's tweets about fake news are usually used to attack democrats, establishment and media.
+Our findings indicate a predominately positive sentiment in Trump's tweets. This observation could have two potential explnations:
+- As a politician, Trump might be inclined to emphasize positive events over negative ones in his tweets.    Highlighting favorable occurrences concerning himself could serve as a making a case for voting himself.
+- The VADER lexicon might be inaccurate capturing the sentiment the sarcastic tweets. Despite VADER's focus on social media language, discerning sarcasm remains a challenging task, potentially introducing biases in the analysis.
+
+Our strategy to assess VADER's capability to interpret Trump's sentiment consists on focusing on tweets related to Joe Biden and Democrats. We expect a negative sentiment given that they are the main target of Trump's tweets. Yet, upon observing the plotted data, while a slight shift in sentiment distribution is evident, the dominant sentiment remains positive. We should be careful further proceeding in our analysis since sarcasm could alter our results.
+Interestingly, looking at the graph below,  only tweets associated with fake news in relation to COVID-19 exhibit a notably strong negative sentiment. This aligns with expectations since Trump's tweets concerning fake news usually serve as attacks directed at Democrats, the establishment, and the media.
 
 <div class="internet">
     <img src="assets/img/stacked_plot_sentiment_categories.png" style="display: block; margin: 0 auto; width: 60%;"/>
@@ -219,7 +220,11 @@ our analyzer might not get:
 This reminds us to remain careful with our results concerning sentiment types.## I WOULD ELIMINATE
 
 ### Step 2: Logisisitc regression on Trump's sentiment
-We want to look for reasonable predictors of Trump's sentiment. As stated before we consider as predictors the general sentiment among population in US and the increment of new cases of Covid-19 in US. At first we regress Trump's sentiment on the predictors separetedly and both of them are significant at 5% level. We try to make a step further and we include both of them in the regression. We find more polarized regression coeeficients and even the p-values are lower, the coefficient are significative at 1% level. In the following we report a table with the coefficient of regressions
+We want to look for reasonable predictors of Trump's sentiment. As stated before, we consider as predictors the general sentiment among population, computed as the mean of compounded score of daily tweets, and the rise in new COVID-19 cases. Our focus was on a specific timeframe spanning from March 19, 2020, to April 18, 2020, considering the spread of COVID-19 and Twitter activity within the US.
+
+Initially, we conducted separate regressions, regressing Trump's sentiment on each predictor individually. Both predictors exhibited significance at a 5% level. Subsequently, taking a step forward, we incorporated both predictors into the regression model. Notably, we retained the expected sign of the coefficients, and the p-values reduced compared to the single-predictor regressions. Moreover, with both predictors included, the coefficients attained significance at a 2.5% level.
+
+Below, we present the regression results in the following table.
 
 #### Logistic regression (Trump's sentiment ~ general sentiment + increment of new cases)
 
@@ -228,6 +233,13 @@ We want to look for reasonable predictors of Trump's sentiment. As stated before
 |Intercept              |-1.2070   |  0.679    |-1.777  |  0.076 | -2.538 |  0.124 |
 |peopl_sent             | 4.8260   |  2.069    | 2.333  |  0.020 |  0.771 |  8.881 |
 |increase_new_cases     |-1.9933   |  0.875    |-2.277  |  0.023 | -3.709 | -0.278 |
+
+We now want to assess the robustness of our logistic regression, we compute the confusion Matrix, the accuracy, the precision and the recall of our model. We obtain the following results:
+
+| Confusion Matrix                    | ROC curve & AUC                     |
+| ----------------------------------- | ----------------------------------- |
+| ![output_mat](image/output_mat.png) | ![output_roc](image/output_roc.png) |
+
 
 
 ## What makes Donald Trump retweeted?
