@@ -249,7 +249,7 @@ Below, we present the regression results in the following table.
 We now want to assess the robustness of our logistic regression, we compute the confusion Matrix, the ROC curve and the AUC score. a.
 
 <div class="results">
-    <img src="assets/img/comb.png" style="display: block; margin: 0 auto; width: 80%;"/>
+    <img src="assets/img/conf_e_auc.jpeg" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
 The results obtained are promising, demonstrating both precision and recall values at 0.8. Our analysis was conducted within a month-long window, aligning with the peak period of interest in Trump's tweets about Covid-19.
