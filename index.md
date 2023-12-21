@@ -90,11 +90,12 @@ In fact, if you look closely also much more interesting words like "Coronavirus"
 Let's filter the tweets using some keywords related to covid to see if something interesting appears.
 
 <div style="display: flex; justify-content: space-between;">
-    <div class="internet" style="flex-basis: 45%;">
-        <img src="assets/img/retweets_covid_michi5.png" style="display: block; margin: 0 auto; width: 100%;"/>
+    <div class="internet" style="flex-basis: 50%;">
+        <img src="assets/img/covid_perc_michi4.png" style="display: block; margin: 0 auto; width: 60%;"/>
     </div>
-    <div class="internet" style="flex-basis: 45%;">
-        <img src="assets/img/topic_clusters_michi6.png" style="display: block; margin: 0 auto; width: 100%;"/>
+  
+    <div class="internet" style="flex-basis: 50%;">
+        <img src="assets/img/  retweets_covid_michi5.png" style="display: block; margin: 0 auto; width: 60%;"/>
     </div>
 </div>
 
@@ -106,7 +107,7 @@ Let's filter the tweets using some keywords related to covid to see if something
 Of course filterning with covid as a keyword, it will become the most searched one. But some interesting words like "swine flu" and "china virus" start popping up, and "fake news" becomes much more important. 
 
 <div class="internet">
-    <img src="assets/img/covid_perc_michi4.png" style="display: block; margin: 0 auto; width: 30%;"/>
+    <img src="assets/img/topic_clusters_michi6.png" style="display: block; margin: 0 auto; width: 30%;"/>
 </div>
 
 ### Trump the Trend Maker or Trump the Follower, that is the question!
