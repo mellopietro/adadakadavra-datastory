@@ -116,8 +116,6 @@ Given the non informative nature of these clusters we draw the conclusion that t
 ### Trump the Trend Maker or Trump the Follower, that is the question!
 
 ## Who is causing whom? Let's study Donald Trump's favorite fake news
-or
-# Does Trump cause Online Trends?
 
 One of our research questions is to find whether there is a causal relationship between Trump's tweets and the number
 of visits on some Covid-related topics, for example hydroxychloroquine on Wikipedia. During COVID-19 period Trump
@@ -156,10 +154,10 @@ is that "the the time series the first column is NOT Granger caused by the time 
 
 We conducted two Granger causality tests: "Trump's Granger causes views on Wikipedia" and "Views on Wikipedia Granger
 cause
-Trump's tweets". The p-values of the test for one and two lags are given in Table TODO. According
-to [Wikipedia](https://en.wikipedia.org/wiki/Granger_causality),
-however, "the null hypothesis of no Granger causality is not rejected if and only if no lagged values of an explanatory
-variable have been retained in the regression". In other words, having signifance for one lagged value is enough.
+_Trump's tweets". The p-values of the test for one and two lags are given in Table TODO. According_
+to[Wikipedia](https://en.wikipedia.org/wiki/Granger_causality),
+_however, "the null hypothesis of no Granger causality is not rejected if and only if no lagged_ _values of an explanatory_
+_variable have been retained in the regression". In other words, having signifance for one lagged value is enough._
 
 Both Granger causality tests have at least one lagged value for which the p-value is below the threshold of 0.05.
 Both tests are therefore statistically signifcant: Trump's tweets Granger cause Wikipedia views and vice versa.
@@ -189,26 +187,23 @@ To run this analysis we need to build a dataframe with the following columns:
 - x: the number of visits to a set of pages (the control variables), which were not affected by the intervention (
   Trump's first tweet).
 
-The following [assumptions](https://pypi.org/project/pycausalimpact/) need to be verified to conduct this test : "the
-response
-variable can be precisely modeled by a linear regression with what is known as "covariates" (or X) that must not be
-affected by
-the intervention that took place".
+_The following [assumptions](https://pypi.org/project/pycausalimpact/) need to be verified to conduct this test : "the_
+_response_
+_variable can be precisely modeled by a linear regression with what is known as "covariates" (or X) _that must not be_
+_affected by_
+_the intervention that took place"._
 
 We decided to take the time series of the following five topics, which for obvious reasons should not have been affected
 by
 Trump's tweet, as control variables: climate, coffee, news, shop and time.
 
-We focused on the first of Trump's tweets mentioning hydroxychloroquine, as it happens to coincide with a pig beak in
-online
-interest for the topic.
 The causal impact analysis for this first tweet corroborated the visual inspection of the Wikipedia time series: the
 peak in
 interest on hydroxychloroquine preceded Trump's first tweet. His tweet therefore didn't seem to have had a strong impact
 on interest.
-Note, however, that we used global trends time series. It might be that Trump had a local impact (though probably not
+DO WE NEED TO MENTION THIS:#####Note, however, that we used global trends time series. It might be that Trump had a local impact (though probably not
 strong) on
-Google searches, e.g. in the United States.
+Google searches, e.g. in the United States.######
 
 As explained earlier, an alternative possibility to explain why online trends time series and Trump's tweets Granger
 cause each
@@ -251,10 +246,8 @@ generalize our observations.
 ## Is Trump's tweets influence predictable?
 
 So far we lack to find a causal link between Trump's tweets and general online trends and vicevrsa. We want now to
-investigate if at least the sentiment of Trump's tweets can be predicted according to two factors that we think are
-relevant: the general Twitter sentiment among population in US and the increment of new cases of Covid-19 in US. We
-except that first variable to be positively correlated with Trump's sentiment, while the second one to be negatively
-correlated. ## Etienne: MAYBE CMPLETE THE INTRO.
+investigate if at least the number of retweets the sentiment of Trump's tweets and  can be predicted according to two factors that we think are
+relevant.
 
 ### Step 1: Sentiment analysis of Trump's tweets
 
@@ -266,7 +259,7 @@ To comprehend the general sentiment within Trump's tweets, we utilized VADER, a 
 for social media text. Each tweet is assigned a score calculated as the aggregate of individual word scores within the
 text. Our analysis will focus on compound score, which is a combination of positive, negative, and neutral scores.
 
-Our findings indicate a predominately **positive sentiment** in Trump's tweets. This observation could have two
+Our findings indicate a predominately positive sentiment in Trump's tweets. This observation could have two
 potential explnations:
 
 - As a politician, Trump might be inclined to emphasize positive events over negative ones in his tweets. Highlighting
@@ -274,8 +267,8 @@ potential explnations:
 - The VADER lexicon might be inaccurate capturing the sentiment the sarcastic tweets. Despite VADER's focus on social
   media language, discerning sarcasm remains a challenging task, potentially introducing biases in the analysis.
 
-Our strategy to assess VADER's capability to interpret Trump's sentiment consists on focusing on tweets related to **Joe
-Biden** and Democrats. We expect a **negative sentiment** given that they are the main target of Trump's tweets. Yet,
+Our strategy to assess VADER's capability to interpret Trump's sentiment consists on focusing on tweets related to other topics, for example Joe
+Biden and Democrats. We expect a negative sentiment given that they are the main target of Trump's tweets. Yet,
 upon observing the plotted data, while a slight shift in sentiment distribution is evident, the dominant sentiment
 remains positive. We should be careful further proceeding in our analysis since sarcasm could alter our results.
 Interestingly, looking at the graph below, only tweets associated with fake news in relation to COVID-19 exhibit a
@@ -285,14 +278,6 @@ as attacks directed at Democrats, the establishment, and the media.
 <div class="internet">
     <img src="assets/img/stacked_plot_sentiment_categories.png" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
-
-TAKE OUT##Interestingly, tweets about Covid are mainly positive and tweets about biden are not that negative. For covid
-this is
-due that Trumps focused a lot of his tweets on the fact that America will win against Covid. About Biden, the
-explanation is a bit less obvious, actually when looking at some of those positive tweets, we notice some sarcasm that
-our analyzer might not get:
-
-This reminds us to remain careful with our results concerning sentiment types.## I WOULD ELIMINATE
 
 ## Step 2: Study what makes Donald Trump retweeted?
 
@@ -346,10 +331,8 @@ From this, we can conclude that :
 
 ### Step 3: Logisisitc regression on Trump's sentiment
 
-We want to look for reasonable predictors of Trump's sentiment. As stated before, we consider as predictors the general
-sentiment among population, computed as the mean of **compounded score** of daily tweets, and the rise in new COVID-19
-cases. Our focus was on a specific timeframe spanning from March 19, 2020, to April 18, 2020, considering the spread of
-COVID-19 and Twitter activity within the US.
+
+As predictors of Trump's tweets sentiment we use the mean of compounded score of daily american tweets, and the rise in new COVID-19 cases in US. Our focus was on a specific timeframe spanning from March 19, 2020 to April 18, 2020.
 
 Initially, we conducted separate regressions, regressing Trump's sentiment on each predictor individually. Both
 predictors exhibited significance at a 5% level. Subsequently, taking a step forward, we incorporated both predictors
