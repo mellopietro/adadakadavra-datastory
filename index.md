@@ -90,18 +90,28 @@ In fact, if you look closely also much more interesting words like "Coronavirus"
 Let's filter the tweets using some keywords related to covid to see if something interesting appears.
 
 <div class="internet">
-    <img src="assets/img/retweets_covid_michi5.png" style="display: block; margin: 0 auto; width: 80%;"/>
+    <img src="assets/img/retweets_covid_michi5.png" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
+
+With no surprise the "hottest" period for covid-related tweets is the one at the start of the pandemic in march. Not only that was the period in which Trump tweeted the most about covid, but it was also the period in which his covid related tweets had most success in his public, being the most retweeted ones. But how his interests shifted in the covid related tweets?
 
 <div class="internet">
     <img src="assets/img/world_cloud_covid_michi3.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
-Of course filterning with covid as a keyword, it will become the most searched one. But some interesting words like "swine flu" and "china virus" start popping up, and "fake news" becomes much more important. 
+Of course filterning with covid as a keyword, it will become the most searched one. But some interesting words like "swine flu" and "china virus" start popping up, and "fake news" becomes much more important. We thought that this shifting in the topics was also due to the propensity of Trump on reporting news from non relying sources, like te ones that belived that the virus was due to a bad management during the obama mandate of the swine flu. This was totally inrelated to the covid issues and it was used by Trump as a scapegoat for is poor management of the pandemic.
+
+We asked ourselves if using a Latent Dirichlet Allocation we would be able to isolate a cluster of tweets with these interesting topics without having to manually select the fake-news related. We chose as reference period the one from early March to late May, since we saw that was the most interesting one when talking about covid.
+
+**interactive graph of lda**
+
+Playing around a little bit with the graphical interface we see that the algorithm selects this three main topic clusters:
 
 <div class="internet">
     <img src="assets/img/topic_clusters_michi6.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
+
+Given the non informative nature of these clusters we draw the conclusion that there is a tendency in Donald Trump tweets to be mainly related to his political campaign also in covid. Huge part of his political campign is centered in in talking about the other political faction rather than the urgent problems of the nation. For this reason an automatic algorithm does not fit very well the purpose of identifying tweets related to fake news and we selected them manually.
 
 ### Trump the Trend Maker or Trump the Follower, that is the question!
 
