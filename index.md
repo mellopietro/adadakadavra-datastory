@@ -103,9 +103,6 @@ Of course filterning with covid as a keyword, it will become the most searched o
 
 We asked ourselves if using a Latent Dirichlet Allocation we would be able to isolate a cluster of tweets with these interesting topics without having to manually select the fake-news related. We chose as reference period the one from early March to late May, since we saw that was the most interesting one when talking about covid.
 
-**interactive graph of lda**
-
-
 {% include grafico_lda.html %}
 
 Playing around a little bit with the graphical interface we see that the algorithm selects this three main topic clusters:
