@@ -202,7 +202,54 @@ and for one topic, however. The results should therefore be interpreted with cau
 be done to
 generalize our observations.
 
-## What makes Donald Trump retweeted?
+
+## Is Trump's tweets influence predictable?
+
+So far we lack to find a causal link between Trump's tweets and general online trends and vicevrsa. We want now to
+investigate if at least the sentiment of Trump's tweets can be predicted according to two factors that we think are
+relevant: the general Twitter sentiment among population in US and the increment of new cases of Covid-19 in US. We
+except that first variable to be positively correlated with Trump's sentiment, while the second one to be negatively
+correlated. ## Etienne: MAYBE CMPLETE THE INTRO.
+
+### Step 1: Sentiment analysis of Trump's tweets
+
+<div class="internet">
+    <img src="assets/img/sentiment_pie_chart.png" style="display: block; margin: 0 auto; width: 40%;"/>
+</div>
+
+To comprehend the general sentiment within Trump's tweets, we utilized VADER, a rule-based sentiment analyzer specific
+for social media text. Each tweet is assigned a score calculated as the aggregate of individual word scores within the
+text. Our analysis will focus on compound score, which is a combination of positive, negative, and neutral scores.
+
+Our findings indicate a predominately **positive sentiment** in Trump's tweets. This observation could have two
+potential explnations:
+
+- As a politician, Trump might be inclined to emphasize positive events over negative ones in his tweets. Highlighting
+  favorable occurrences concerning himself could serve as a making a case for voting himself.
+- The VADER lexicon might be inaccurate capturing the sentiment the sarcastic tweets. Despite VADER's focus on social
+  media language, discerning sarcasm remains a challenging task, potentially introducing biases in the analysis.
+
+Our strategy to assess VADER's capability to interpret Trump's sentiment consists on focusing on tweets related to **Joe
+Biden** and Democrats. We expect a **negative sentiment** given that they are the main target of Trump's tweets. Yet,
+upon observing the plotted data, while a slight shift in sentiment distribution is evident, the dominant sentiment
+remains positive. We should be careful further proceeding in our analysis since sarcasm could alter our results.
+Interestingly, looking at the graph below, only tweets associated with fake news in relation to COVID-19 exhibit a
+notably strong negative sentiment. This aligns with expectations since Trump's tweets concerning fake news usually serve
+as attacks directed at Democrats, the establishment, and the media.
+
+<div class="internet">
+    <img src="assets/img/stacked_plot_sentiment_categories.png" style="display: block; margin: 0 auto; width: 100%;"/>
+</div>
+
+TAKE OUT##Interestingly, tweets about Covid are mainly positive and tweets about biden are not that negative. For covid
+this is
+due that Trumps focused a lot of his tweets on the fact that America will win against Covid. About Biden, the
+explanation is a bit less obvious, actually when looking at some of those positive tweets, we notice some sarcasm that
+our analyzer might not get:
+
+This reminds us to remain careful with our results concerning sentiment types.## I WOULD ELIMINATE
+
+## Step 2: Study what makes Donald Trump retweeted?
 
 We have seen than Donald Trump is usually not a trendmaker, but more of a trendfollower. Still, he propagates the trend.
 Let's use the number of retweets of his declarations to spot what type of tweets are more influencial and spread. We
@@ -251,53 +298,8 @@ From this, we can conclude that :
 - Negative sentiment in tweets spread significantly more than neutral ones
 - However, we can not say that positive ones spread either faster either slower than neutral ones
 
-## Is Trump's tweets sentiment predictable?
 
-So far we lack to find a causal link between Trump's tweets and general online trends and vicevrsa. We want now to
-investigate if at least the sentiment of Trump's tweets can be predicted according to two factors that we think are
-relevant: the general Twitter sentiment among population in US and the increment of new cases of Covid-19 in US. We
-except that first variable to be positively correlated with Trump's sentiment, while the second one to be negatively
-correlated. ## Etienne: MAYBE CMPLETE THE INTRO.
-
-### Step 1: Sentiment analysis of Trump's tweets
-
-<div class="internet">
-    <img src="assets/img/sentiment_pie_chart.png" style="display: block; margin: 0 auto; width: 40%;"/>
-</div>
-
-To comprehend the general sentiment within Trump's tweets, we utilized VADER, a rule-based sentiment analyzer specific
-for social media text. Each tweet is assigned a score calculated as the aggregate of individual word scores within the
-text. Our analysis will focus on compound score, which is a combination of positive, negative, and neutral scores.
-
-Our findings indicate a predominately **positive sentiment** in Trump's tweets. This observation could have two
-potential explnations:
-
-- As a politician, Trump might be inclined to emphasize positive events over negative ones in his tweets. Highlighting
-  favorable occurrences concerning himself could serve as a making a case for voting himself.
-- The VADER lexicon might be inaccurate capturing the sentiment the sarcastic tweets. Despite VADER's focus on social
-  media language, discerning sarcasm remains a challenging task, potentially introducing biases in the analysis.
-
-Our strategy to assess VADER's capability to interpret Trump's sentiment consists on focusing on tweets related to **Joe
-Biden** and Democrats. We expect a **negative sentiment** given that they are the main target of Trump's tweets. Yet,
-upon observing the plotted data, while a slight shift in sentiment distribution is evident, the dominant sentiment
-remains positive. We should be careful further proceeding in our analysis since sarcasm could alter our results.
-Interestingly, looking at the graph below, only tweets associated with fake news in relation to COVID-19 exhibit a
-notably strong negative sentiment. This aligns with expectations since Trump's tweets concerning fake news usually serve
-as attacks directed at Democrats, the establishment, and the media.
-
-<div class="internet">
-    <img src="assets/img/stacked_plot_sentiment_categories.png" style="display: block; margin: 0 auto; width: 100%;"/>
-</div>
-
-TAKE OUT##Interestingly, tweets about Covid are mainly positive and tweets about biden are not that negative. For covid
-this is
-due that Trumps focused a lot of his tweets on the fact that America will win against Covid. About Biden, the
-explanation is a bit less obvious, actually when looking at some of those positive tweets, we notice some sarcasm that
-our analyzer might not get:
-
-This reminds us to remain careful with our results concerning sentiment types.## I WOULD ELIMINATE
-
-### Step 2: Logisisitc regression on Trump's sentiment
+### Step 3: Logisisitc regression on Trump's sentiment
 
 We want to look for reasonable predictors of Trump's sentiment. As stated before, we consider as predictors the general
 sentiment among population, computed as the mean of **compounded score** of daily tweets, and the rise in new COVID-19
