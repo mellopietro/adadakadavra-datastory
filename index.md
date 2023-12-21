@@ -67,7 +67,27 @@ influential leader can have on information spread in a crisis with a focus on fa
 contradictory statements (an infodemic, as [WHO](https://www.who.int/health-topics/infodemic#tab=tab_1) calls it) are
 known to have a detrimental impact on crisis management.
 
-## need to add trumps tweet presentation
+### Anatomy of "The Donald" Twitter Account
+<div class="internet">
+    <img src="assets/img/trump_tweets_michi1.png" style="display: block; margin: 0 auto; width: 80%;"/>
+</div>
+
+<div class="internet">
+    <img src="assets/img/world_cloud_michi2.png" style="display: block; margin: 0 auto; width: 80%;"/>
+</div>
+<div class="internet">
+    <img src="assets/img/world_cloud_covid_michi3.png" style="display: block; margin: 0 auto; width: 80%;"/>
+</div>
+<div class="internet">
+    <img src="assets/img/covid_perc_michi4.png" style="display: block; margin: 0 auto; width: 80%;"/>
+</div>
+<div class="internet">
+    <img src="assets/img/retweets_covid_michi5.png" style="display: block; margin: 0 auto; width: 80%;"/>
+</div>
+<div class="internet">
+    <img src="assets/img/topic_clusters_michi6.png" style="display: block; margin: 0 auto; width: 80%;"/>
+</div>
+
 ### Trump the Trend Maker or Trump the Follower, that is the question!
 
 ## Who is causing whom? Let's study Donald Trump's favorite fake news
