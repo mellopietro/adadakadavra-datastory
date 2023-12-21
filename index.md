@@ -106,7 +106,7 @@ We asked ourselves if using a Latent Dirichlet Allocation we would be able to is
 **interactive graph of lda**
 
 
-<div style="width: 80%">
+<div style="width: 30%">
     {% include grafico_lda.html %}
 </div>
 
