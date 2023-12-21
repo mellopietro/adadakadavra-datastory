@@ -69,23 +69,33 @@ known to have a detrimental impact on crisis management.
 
 ### Anatomy of "The Donald" Twitter Account
 
-Now we want to know a little bit better our main character of this datastory. For this purpose we will analize its tweets. One could argue that it is impossible to understand a person just looking at what he tweeted, the sample is just too small. Well, this is certanly not the case!
+Now we want to know a little bit better our main character of this datastory. For this purpose we will analize his tweets. One could argue that it is impossible to understand a person just looking at what he tweeted, the sample is just too small. Well, this is certanly not the case!
 
 <div class="internet">
     <img src="assets/img/trump_tweets_michi1.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
 As you can see it seems that Trump is always tweeting! 
-The numbers are just too good to be true. In the period we are considering, which is the entire 2020, he tweeted/retweeted every day, with a mean of more than 33 tweets per day and peaks of as much as 150 tweets/retweets in one single day. Considering a day consisting in 16 hours of wake time, on average he posted one tweet/retweet every half an hour every day for an entire year. The good news are not even finishe, he is not just speaking on his own, but he reaches millions of people. This is testimonied by the millions of likes (almost 2 millions a day on average) and thousands of retweets (more than 600 hundred thousant a day on average). 
+The numbers are just too good to be true. In the period we are considering, which is the entire 2020, he tweeted/retweeted every day, with a mean of more than 33 tweets per day and peaks of as much as 150 tweets/retweets in one single day. Considering a day consisting in 16 hours of wake time, on average he posted one tweet/retweet every half an hour every day for an entire year. The good news are not even finished, he is not just speaking on his own, but he reaches millions of people. This is testimonied by the millions of likes (almost 2 millions a day on average) and thousands of retweets (more than 600 hundred thousant a day on average). 
 
 Now we know that we know that there is a lot to work on, we want to understand the character. In order to know him better we want to see what is most interested about. We extrapolated this information visualizing his most used words.
 
 <div class="internet">
     <img src="assets/img/world_cloud_michi2.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
+
+We can see that most of his favorites words are related to his continous political campaign. We notice the words "vote", "election", "WhiteHouse", but also many regarding his opponent Joe Biden and his political faction of the democrats. You can also see his favourite disrispectful nickname given to Biden of "Sleepy Joe". 
+It is clear how you can understand a lot of a person just looking at his tweets if he tweets 30 times a day!
+In fact, if you look closely also much more interesting words like "Coronavirus", "China" and "Fake News" appear. 
+Let's filter the tweets using some keywords related to covid to see if something interesting appears.
+
 <div class="internet">
     <img src="assets/img/world_cloud_covid_michi3.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
+
+Of course filterning with covid as a keyword, it will become the most searched one. But some interesting words like "swine flu" and "china virus" start popping up, and "fake news" becomes much more important. 
+This sproned us to 
+
 <div class="internet">
     <img src="assets/img/covid_perc_michi4.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
