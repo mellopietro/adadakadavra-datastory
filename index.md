@@ -233,19 +233,23 @@ with
 some sentiments? When regressing number retweets versus sentiment types, being fake news related (talking about one the
 fake news we studied) and being related to covid, we obtain:
 $$y_i = \Beta_0 + \Beta_1x_{fake_news_related}+ \Beta_2x_{covid_related}+ \Beta_3x_{sentiment_type} $$
+Here, intercept corresponds to the zero class, being not fake news related, not covid and related and neutral. 
 
 |                               |       Coef       | Std error | 
 |:------------------------------|:----------------:|:---------:|
 | Intercept                     | 2.098e+04 (***)  |  295.588  |
- C(is_fake_news)[T.True]       | -4894.4386 (***) |  736.312  | 
-| C(covid_related)[T.True]      | 7912.5949 (***)  | 1933.190  
-| C(sentiment_type)[T.NEUTRAL]  | -2782.3507 (***) |  417.806  |
-| C(sentiment_type)[T.POSITIVE] | -2672.4324 (***) |  372.649  |
+ C(covid_related)[T.True]       | -4894.4386 (***) |  736.312  | 
+| C(is_fake_news)[T.True]      | 7912.5949 (***)  | 1933.190  
+| C(NEGATIVE)[T.True] | 2782.3507 (***)  |  417.806  |
+| C(POSITIVE)[T.True]  |    109.9182      |  376.424  |
 | R^2                           |      0.009       |           | |
 *p-values* : ***p<0.001, **p<0.01 and  *p<0.05
 
-%% I'D LIKE TO CHANGE 0 CLASS TO BE NEUTRA HERE
-
+From this, we can conclude that :
+- Talking about covid is significantly reducing the number of potential retweets
+- However, a tweets related to fake news will significantly increase the number of potentiel retweets, higher than the decrease when talking about covid
+- Negative sentiment in tweets spread significantly more than neutral ones
+- However, we can not say that positive ones spread either faster either slower than neutral ones
 
 ## Is Trump's tweets sentiment predictable?
 
