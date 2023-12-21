@@ -97,10 +97,10 @@ Of course filterning with covid as a keyword, it will become the most searched o
 This sproned us to 
 
 <div class="internet">
-    <img src="assets/img/covid_perc_michi4.png" style="display: block; margin: 0 auto; width: 80%;"/>
+    <img src="assets/img/covid_perc_michi4.png" style="display: block; margin: 0 auto; width: 30%;"/>
 </div>
 <div class="internet">
-    <img src="assets/img/retweets_covid_michi5.png" style="display: block; margin: 0 auto; width: 80%;"/>
+    <img src="assets/img/retweets_covid_michi5.png" style="display: block; margin: 0 auto; width: 30%;"/>
 </div>
 <div class="internet">
     <img src="assets/img/topic_clusters_michi6.png" style="display: block; margin: 0 auto; width: 80%;"/>
