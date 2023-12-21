@@ -83,7 +83,7 @@ We will start by graphically studying the evolution of the number of queries/vis
 Trump's tweets had an impact on them.
 
 <div class="internet">
-    <img src="assets/img/hydro_wiki_timeseries_daily.png" style="display: block; margin: 0 auto; width: 60%;"/>
+    <img src="assets/img/hydro_wiki_timeseries_daily.png" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
 
 As we can see from the graph above, Trump's tweets on hydroxychloroquine seem to precede certain attention
@@ -263,7 +263,7 @@ Let's use the number of retweets of his declarations to spot what type of tweets
 already noticed that Trump's tweet are compound in sentiments. What sentiments spread the most?
 trend
 <div class="internet">
-    <img src="assets/img/retweet_per_sentiment.png" style="display: block; margin: 0 auto; width: 60%;"/>
+    <img src="assets/img/retweet_per_sentiment.png" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
 
 According to this, negative sentiment tends to be significantly more retweeted. As shown in part 2, those tweets might
@@ -271,7 +271,7 @@ refer to democrats or others of his ennemies. What happens when we dive into dif
 plots shows the average number of retweets for some broad categories we identified:
 
 <div class="internet">
-    <img src="assets/img/barplot_per_categories.png" style="display: block; margin: 0 auto; width: 60%;"/>
+    <img src="assets/img/barplot_per_categories.png" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
 
 Surprisingly, talking about Covid makes less retweets than his usual subjects such as democrats and Joe Biden. However,
@@ -279,7 +279,7 @@ when we identify a topic of fake news in the tweet, this is related to more retw
 by looking at retweets for each category separately :
 
 <div class="internet">
-    <img src="assets/img/retweets_per_categories.png" style="display: block; margin: 0 auto; width: 60%;"/>
+    <img src="assets/img/retweets_per_categories.png" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
 
 Looking at this, we wondered, can we predict the number of retweets Trump can expect by talking about known fake news
