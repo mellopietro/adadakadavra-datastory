@@ -89,15 +89,9 @@ It is clear how you can understand a lot of a person just looking at his tweets 
 In fact, if you look closely also much more interesting words like "Coronavirus", "China" and "Fake News" appear. 
 Let's filter the tweets using some keywords related to covid to see if something interesting appears.
 
-<div style="display: flex; justify-content: space-between;">
-    <div class="internet" style="flex-basis: 55%;">
-        <img src="assets/img/covid_perc_michi4.png" style="display: block; margin: 0 auto; width: 100%;"/>
-    </div>
-    <div class="internet" style="flex-basis: 55%;">
-        <img src="assets/img/retweets_covid_michi5.png" style="display: block; margin: 0 auto; width: 100%;"/>
-    </div>
+<div class="internet">
+    <img src="assets/img/retweets_covid_michi5.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
-
 
 <div class="internet">
     <img src="assets/img/world_cloud_covid_michi3.png" style="display: block; margin: 0 auto; width: 80%;"/>
