@@ -106,7 +106,9 @@ We asked ourselves if using a Latent Dirichlet Allocation we would be able to is
 **interactive graph of lda**
 
 
-{% include grafico_lda.html %}
+<div style="width: 80%">
+    {% include grafico_lda.html %}
+</div>
 
 Playing around a little bit with the graphical interface we see that the algorithm selects this three main topic clusters:
 
