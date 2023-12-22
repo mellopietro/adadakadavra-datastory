@@ -298,11 +298,9 @@ plots shows the average number of retweets for some broad categories we identifi
 Surprisingly, talking about Covid makes fewer retweets than his usual subjects such as democrats and Joe Biden. However,
 when we identify a topic associated to known fake news in the tweet, this is related to more retweets in average. And we
 can check the significance of the difference of average retweets by looking at retweets for each category separately :
-
 <div class="internet">
     <img src="assets/img/retweets_per_categories.png" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
-
 Looking at this, we wondered, can we predict the impact of Trump's tweet focusing on our main interests : being Covid
 related, fake news related and adding the tweet's sentiment ?
 When regressing number retweets versus sentiment types, being fake news related (talking about one the
