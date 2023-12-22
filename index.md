@@ -255,13 +255,13 @@ potential explanations:
 - As a politician, Trump might be inclined to emphasize positive events over negative ones in his tweets. Highlighting
   favorable occurrences concerning himself or his voters could serve as a making a case for voting himself, such as :
 
-<p>The 75,000,000 great American Patriots who voted for me, AMERICA FIRST, and MAKE AMERICA GREAT AGAIN, will have a GIANT VOICE long into the future. They will not be disrespected or treated unfairly in any way, shape or form!!!</p> 
+<p>"The 75,000,000 great American Patriots who voted for me, AMERICA FIRST, and MAKE AMERICA GREAT AGAIN, will have a GIANT VOICE long into the future. They will not be disrespected or treated unfairly in any way, shape or form!!!"</p> 
 
 - The VADER lexicon might be inaccurate capturing the sentiment the sarcastic tweets. Despite VADER's focus on social
   media language, discerning sarcasm remains a challenging task, potentially introducing biases in the analysis. As an
   example, the following tweet is considered positive by VADER:
 
-<p>mike pence didn’t have the courage to do what should have been done to protect our country and our constitution  giving states a chance to certify a corrected set of facts  not the fraudulent or inaccurate ones which they were asked to previously certify  usa demands the truth </p> 
+<p>"mike pence didn’t have the courage to do what should have been done to protect our country and our constitution  giving states a chance to certify a corrected set of facts  not the fraudulent or inaccurate ones which they were asked to previously certify  usa demands the truth" </p> 
 
 Our strategy to assess VADER's capability to interpret Trump's sentiment consists on focusing on tweets related to other
 topics, for example Joe Biden and Democrats. We expect a negative sentiment given that they are the main target of
