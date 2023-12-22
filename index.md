@@ -291,6 +291,8 @@ represent 95 % confidence intervals):
 
 According to this plot, tweets with negative sentiment tend to be significantly more retweeted. As shown in part 2, those tweets might
 refer to Democrats or other of his opponents. Let's dive into the average number of retweets  for a few different topic categories:
+
+<div class="internet">
     <img src="assets/img/barplot_per_categories.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
