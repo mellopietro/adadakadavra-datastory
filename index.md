@@ -156,7 +156,7 @@ As we can see from the graph above, Trump's tweets on hydroxychloroquine seem to
 peaks (e.g. the second big peak at the start of April), but come after others (e.g. the first big peak, around
 mid-March). But then, do tweets cause views or the other way around?
 
-### Granger causality - Do Trump's Tweets give useful Information for Predicting Online Interest?
+### Granger Causality - Do Trump's Tweets give useful Information for Predicting Online Interest?
 
 Clearly, a visual inspection of the evolution of tweeting and daily Wikipedia views makes it difficult to assess whether Trump causes tweets or the other way around.
 To further investigate the causal relationship between tweeting and online public interest, we therefore chose to conduct
@@ -277,7 +277,7 @@ as attacks directed at Democrats, the establishment, and the media.
     <img src="assets/img/stacked_plot_sentiment_categories.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
-### What gets Trump most Retweets?
+### What kind of Tweet gets Trump most Retweets?
 
 We have seen that Donald Trump is usually not a trend maker, but rather a trend follower. Still, he does propagate trends
 to some extent, at least among his followers.
@@ -384,7 +384,7 @@ media:
 - Talking about fake news tends to create more impact than truth, which is consistent with the results of the following
   study: [On Twitter, false news travels faster than true stories](https://news.mit.edu/2018/study-twitter-false-news-travels-faster-true-stories-0308)
 
-### Using logistic regression to predict Trump's tweets sentiment based on exogenous factors
+### Predicting the Sentiment of Trump's Tweets using Exogenous Factors
 
 Now that we identified that some characteristics of Trump's tweet have a direct impact on their spread, we would like to
 see whether we can predict one of these characteristics: the tweet's sentiment. As predictors of the sentiment of Trump's tweet, we use the mean
