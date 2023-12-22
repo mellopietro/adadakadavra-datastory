@@ -166,8 +166,7 @@ is that "the the time series the first column is NOT Granger caused by the time 
 
 We conducted two Granger causality tests: "Trump's Granger causes views on Wikipedia" and "Views on Wikipedia Granger
 cause Trump's tweets". 
-Both Granger causality tests have at least one [lagged value]([Wikipedia](https://en.wikipedia.org/wiki/Granger_causality)) 
-for which the p-value is below the threshold of 0.05. Both tests are therefore statistically signifcant: Trump's tweets Granger cause 
+Both Granger causality tests are statistically significant at the 5 % threshold: Trump's tweets Granger cause 
 Wikipedia views and vice versa.
 
 How to interpret the fact that the two time series Granger cause each other? As mentioned earlier, Granger causality
