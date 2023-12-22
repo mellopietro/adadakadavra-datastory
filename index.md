@@ -336,7 +336,7 @@ with
 some sentiments? When regressing number retweets versus sentiment types, being fake news related (talking about one the
 fake news we studied) and being related to covid, we obtain:
 
-![equation](https://latex.codecogs.com/png.image?\dpi{110}y_i=\beta_0&plus;\beta_1&space;x_{fake_news_related}&plus;\beta_2&space;x_{covid_related}&plus;\beta_3&space;x_{sentiment_type})
+![equation](https://latex.codecogs.com/png.image?\dpi{160}y_i=\beta_0&plus;\beta_1&space;x_{fake-news-related}&plus;\beta_2&space;x_{covid-related}&plus;\beta_3&space;x_{sentiment-type})
 
 Here, intercept corresponds to the zero class, being not fake news related, not covid and related and neutral.
 
