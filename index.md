@@ -8,6 +8,7 @@ subtitle: Adadakadavra Team
     <img src="assets/img/title.jpg" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
 &nbsp;
+
 # Context
 
 Remember the beginning of 2020? The Covid pandemic suddently broke out. The disease was unkwnon, not understood
@@ -41,10 +42,8 @@ A linear regression analysis supports this observation. When regressing the numb
 spent at home, the weekends exhibit a substantially higher coefficient of 2.52, in contrast to the coefficient of 0.84
 observed during the week. [Not sure of the method here?]
 
-Main area of searched topics has been studied, you can have a look to : .. . But internet traffic during covid time was
-not only made of cooking recipes and cats, it also was a proper time for fake news propagation, or as
-the [WHO](https://www.who.int/health-topics/infodemic#tab=tab_1) calls it,
-an infodemic. The ancestor of X, Twitter was one of the biggest place to propagate information, especially when
+Main area of searched topics has been studied, you can have a look to : [Manoel et al.](https://arxiv.org/abs/2005.08505) . But internet traffic during covid time was
+not only made of cooking recipes and cats, it also was a proper time for fake news propagation, part of the infodemic. The ancestor of X, Twitter was one of the biggest place to propagate information, especially when
 everything was changing as fast as the premise of the covid crisis. We all know that not all people have the same voice
 on Twitter, few of them are considered to be the most influential individuals on the network. If you had to bet on of
 person to be influential on Twitter, who would it be?
@@ -57,7 +56,7 @@ one of the most followed account (81 millions followers in 2020). If you don't r
 refresher :
 
 <div class="internet">
-    <img src="assets/img/trump_sample_tweet.png" style="display: block; margin: 0 auto; width: 35%;"/>
+    <img src="assets/img/trump_sample_tweet.png" style="display: block; margin: 0 auto; width: 45%;"/>
 </div>
 
 We all know Donald Trump spread fake news, especially on Twitter, his favorite communication channel. His tweets
@@ -95,7 +94,7 @@ better, we want to see what he is most interested about. We extrapolated this in
 We can see that most of his favorites words are related to his continuous political campaigns. We notice the words "
 vote", "election", "WhiteHouse", but also many regarding his opponent Joe Biden and the former's political faction: the
 Democrats. You can also see his favourite disrespectful nickname for Biden: "Sleepy Joe".
-One things is certain: you can understand quite a lot about a person just by looking at their tweets when they tweet 30 times a day!
+One thing is certain: you can understand quite a lot about a person just by looking at their tweets when they tweet 30 times a day!
 In fact, if you look closely, much more interesting words for our analysis, like "Coronavirus", "China" and "Fake News", also appear.
 Let's filter the tweets using some keywords related to Covid to see if something interesting appears.
 
@@ -383,7 +382,7 @@ media:
 - Talking about fake news tends to create more impact than truth, which is consistent with the results of the following
   study: [On Twitter, false news travels faster than true stories](https://news.mit.edu/2018/study-twitter-false-news-travels-faster-true-stories-0308)
 
-### Logistic regression on Trump's sentiment
+### Using logistic regression to predict Trump's tweets sentiment based on exogenous factors
 
 Now that we identified that some characteristics of Trump's tweet have a direct impact on their spread, we would like to
 see whether we can predict one of these characteristics: the tweet's sentiment. As predictors of the sentiment of Trump's tweet, we use the mean
