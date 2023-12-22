@@ -150,7 +150,7 @@ To answer our question, let's start by graphically studying the evolution of the
 Trump's tweets had an impact on them.
 
 <div class="internet">
-    <img src="assets/img/hydro_wiki_timeseries_daily.png" style="display: block; margin: 0 auto; width: 100%;"/>
+    <img src="assets/img/hydro_timeseries_weekly.png" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
 
 As we can see from the graph above, Trump's tweets on hydroxychloroquine seem to precede certain attention
@@ -407,6 +407,6 @@ of a tweet can be fairly well predicted from exogenous data, putting weights on 
 he might have been only surfing on the trends for a while**
 
 Finally, recall that our study might be more actual than it looks, since August 24, Donald Trump is back on X (new
-Twitter), showing is [mugface](https://twitter.com/donaldtrump) has a return sign. Since he is running for presidency
+Twitter), showing his [mugface](https://twitter.com/donaldtrump) has a return sign. Since he is running for presidency
 again, is he using the same communication patterns as we found in our study? While, [The Economist](https://www.economist.com/leaders/2023/11/16/donald-trump-poses-the-biggest-danger-to-the-world-in-2024) advocates that Trump
 poses serious threats to the world stability, no one should worry, Trump's promises to be a dictator, [only on day one](https://eu.usatoday.com/story/news/politics/elections/2023/12/11/donald-trump-dictator-one-day-reelected/71880010007/) !  
