@@ -464,7 +464,7 @@ of fake news. Specifically, was Trump a trendmaker or was he only following some
 already present on Twitter? Put differently, was Trump influential enough to start the spread of a fake news? 
 
 With the Causal Impact tool, we were able to demonstrate no precursor effect of Trump on the online trends of some identified
-fake news. Looking more closely, it would seem that exogenous effects were actually the reason for the rise of interest in
+fake news. Looking more closely, it would seem that exogenous causes were actually the reason for the rise of interest in
 a topic, and for Trump to tweet on that same topic. 
 
 Following on the interest in fake news, we looked at our research question the other way
