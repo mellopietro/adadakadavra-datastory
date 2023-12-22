@@ -12,7 +12,8 @@ subtitle: Adadakadavra Team
 # Context
 
 Remember the beginning of 2020? The Covid pandemic suddently broke out. The disease was unkwnon, not understood
-and scary. Most of the countries decided to lock down to stop the spread of the virus and protect their populations. This resulted in
+and scary. Most of the countries decided to lock down to stop the spread of the virus and protect their populations.
+This resulted in
 major and global changepoints in mobility, as measured by Apple and Google's mobility data :
 
 <div class="mobility-report">
@@ -27,7 +28,8 @@ restrictions were lifted.
 We are particularly interested in studying this second part, as during the weekend, people were not working and had free
 time to engage in various activities.
 
-This time at home was ideal for cooking, watching cat videos (or playing with your cats) and spending time on the internet.
+This time at home was ideal for cooking, watching cat videos (or playing with your cats) and spending time on the
+internet.
 Interestingly, the global internet traffic followed the mobility evolutions:
 
 <div class="mobility-report">
@@ -42,9 +44,14 @@ A linear regression analysis supports this observation. When regressing the numb
 spent at home, the weekends exhibit a substantially higher coefficient of 2.52, in contrast to the coefficient of 0.84
 observed during the week.
 
-The evolution of the main topics searched for online during the pandemic has already been studied, e.g. by [Manoel et al.](https://arxiv.org/abs/2005.08505) . But internet traffic during Covid was
-not only about cooking recipes and cats: it was also a great time to propagate fake news, what the [WHO](https://www.who.int/health-topics/infodemic#tab=tab_1) called an infodemic. The predecessor of X, Twitter, was one of the biggest place to propagate information, especially in quickly changing times such as the Covid pandemic. We all know that not all people have the same voice
-on Twitter, and few of them can be considered to be among the most influential individuals on the network. If you had to bet on a
+The evolution of the main topics searched for online during the pandemic has already been studied, e.g.
+by [Manoel et al.](https://arxiv.org/abs/2005.08505) . But internet traffic during Covid was
+not only about cooking recipes and cats: it was also a great time to propagate fake news, what
+the [WHO](https://www.who.int/health-topics/infodemic#tab=tab_1) called an infodemic. The predecessor of X, Twitter, was
+one of the biggest place to propagate information, especially in quickly changing times such as the Covid pandemic. We
+all know that not all people have the same voice
+on Twitter, and few of them can be considered to be among the most influential individuals on the network. If you had to
+bet on a
 person to be particularly influential on Twitter, who would it be?
 
 **Take a few seconds and answer to yourself, who would it be?**
@@ -55,7 +62,7 @@ one of the most followed account (81 millions followers in 2020). If you don't r
 refresher :
 
 <div class="internet">
-    <img src="assets/img/trump_sample_tweet.png" style="display: block; margin: 0 auto; width: 45%;"/>
+    <img src="assets/img/trump_sample_tweet.jpg" style="display: block; margin: 0 auto; width: 70%;"/>
 </div>
 
 We all know Donald Trump spread fake news, especially on Twitter, his favorite communication channel. His tweets
@@ -68,7 +75,8 @@ contradictory statements are known to have a detrimental impact on crisis manage
 ### Anatomy of "The Donald" Twitter Account
 
 Now we want to know a little bit better the main character of this datastory. For this purpose, we will analyze his
-tweets. One could argue that it is impossible to understand a person just by looking at what he tweeted, the sample is just
+tweets. One could argue that it is impossible to understand a person just by looking at what he tweeted, the sample is
+just
 too small. Well, it's certainly not the case for our protagonist!
 
 <div class="internet">
@@ -79,12 +87,14 @@ As you can see it seems like Trump was always tweeting!
 The numbers are just too good to be true. In the period we are considering, the year 2020, he
 tweeted/retweeted every day, with a mean of more than 33 tweets per day and peaks of as much as 150 tweets/retweets in
 one single day. Assuming he spent 16 hours per day awake means that on average he posted one tweet/retweet every half
-an hour every day for an entire year. The good news are not even finished yet, he is not just speaking by himself, but he
+an hour every day for an entire year. The good news are not even finished yet, he is not just speaking by himself, but
+he
 reaches millions of people. This is shown by the millions of likes (almost 2 millions a day on average) and
 thousands of retweets (more than 600 hundred thousands a day on average) that his posts boast.
 
 Now taht we know that there is enough material to work with, let's try to understand the character. In order to know him
-better, we want to see what he is most interested about. We extrapolated this information visualizing his most used words.
+better, we want to see what he is most interested about. We extrapolated this information visualizing his most used
+words.
 
 <div class="internet">
     <img src="assets/img/world_cloud_michi2.png" style="display: block; margin: 0 auto; width: 80%;"/>
@@ -93,17 +103,21 @@ better, we want to see what he is most interested about. We extrapolated this in
 We can see that most of his favorites words are related to his continuous political campaigns. We notice the words "
 vote", "election", "WhiteHouse", but also many regarding his opponent Joe Biden and the former's political faction: the
 Democrats. You can also see his favourite disrespectful nickname for Biden: "Sleepy Joe".
-One thing is certain: you can understand quite a lot about a person just by looking at their tweets when they tweet 30 times a day!
-In fact, if you look closely, much more interesting words for our analysis, like "Coronavirus", "China" and "Fake News", also appear.
+One thing is certain: you can understand quite a lot about a person just by looking at their tweets when they tweet 30
+times a day!
+In fact, if you look closely, much more interesting words for our analysis, like "Coronavirus", "China" and "Fake News",
+also appear.
 Let's filter the tweets using some keywords related to Covid to see if something interesting appears.
 
 <div class="internet">
     <img src="assets/img/retweets_covid_michi5.png" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
 
-With no surprise the "hottest" period for covid-related tweets is the one at the start of the pandemic, in March 2020. It was not
+With no surprise the "hottest" period for covid-related tweets is the one at the start of the pandemic, in March 2020.
+It was not
 only the period in which Trump tweeted the most about Covid, but it was also the period in which his Covid-
-related tweets were most successful among his followers, being the most retweeted ones. But what are the most used words in Covid-
+related tweets were most successful among his followers, being the most retweeted ones. But what are the most used words
+in Covid-
 related tweets?
 
 <div class="internet">
@@ -112,12 +126,13 @@ related tweets?
 
 Of course, when filtering with Covid as a keyword, it becomes the most popular item. But some interesting words like "
 swine flu" and "china virus" also start popping up, and "fake news" becomes much more important. We thought that this
-shifting in the topics was also due to Trump's tendency to reporting news from unreliable sources, such as those that claimed
+shifting in the topics was also due to Trump's tendency to reporting news from unreliable sources, such as those that
+claimed
 the virus was due to a bad management of the swine flu during Obama's mandate. This was totally
 unrelated to Covid, but Trump used it as a scapegoat for his own poor management of the pandemic.
 
 We asked ourselves if, using a Latent Dirichlet Allocation, we would be able to isolate a cluster of tweets with these
-interesting topics without having to manually select the fake-news related ones. We chose as a reference period the one 
+interesting topics without having to manually select the fake-news related ones. We chose as a reference period the one
 stretching from early March to late May: as we saw earlier, most Covid-related online activity happened in this time.
 
 {% include grafico_lda.html %}
@@ -130,21 +145,27 @@ clusters:
 </div>
 
 Given the non-informative nature of these clusters we draw the conclusion that there is Donald Trump's
-tweets mainly tend to be related to his political campaigns, even when they mention Covid. A huge part of his political campaigning is centered
-around talking about the other political faction, rather than the urgent problems of the nation. For this reason, an automatic
-algorithm does not fit very well the purpose of identifying tweets related to fake news. Instead, we chose to select them manually.
-
+tweets mainly tend to be related to his political campaigns, even when they mention Covid. A huge part of his political
+campaigning is centered
+around talking about the other political faction, rather than the urgent problems of the nation. For this reason, an
+automatic
+algorithm does not fit very well the purpose of identifying tweets related to fake news. Instead, we chose to select
+them manually.
 
 ## Trump the Trend Maker or Trump the Follower, that is the Question!
 
-Next, let's dive into the meat of our problem, with one of our main research questions: is there a causal relationship between Trump's tweets and the number
-of visits on some Covid-related topics, e.g. hydroxychloroquine on Wikipedia? During the COVID-19 period, Trump claimed that hydroxychloroquine was a cure for COVID-19. 
-This claim was not supported by scientific evidence, however, making it more of a fake news really. 
-This was further motivation to investigate this topic in particular: Trump, an actor of the infodemic or not? Let's find out!
+Next, let's dive into the meat of our problem, with one of our main research questions: is there a causal relationship
+between Trump's tweets and the number
+of visits on some Covid-related topics, e.g. hydroxychloroquine on Wikipedia? During the COVID-19 period, Trump claimed
+that hydroxychloroquine was a cure for COVID-19.
+This claim was not supported by scientific evidence, however, making it more of a fake news really.
+This was further motivation to investigate this topic in particular: Trump, an actor of the infodemic or not? Let's find
+out!
 
 ### Evolution of Online Trends and Trump's Tweeting: a first Graphical Inspection
 
-To answer our question, let's start by graphically studying the evolution of the number of queries/visits on the topic of hydroxychloroquine to assess whether
+To answer our question, let's start by graphically studying the evolution of the number of queries/visits on the topic
+of hydroxychloroquine to assess whether
 Trump's tweets had an impact on them.
 
 <div class="internet">
@@ -157,21 +178,25 @@ mid-March). But then, do tweets cause views or the other way around?
 
 ### Granger Causality - Do Trump's Tweets give useful Information for Predicting Online Interest?
 
-Clearly, a visual inspection of the evolution of tweeting and daily Wikipedia views makes it difficult to assess whether Trump causes tweets or the other way around.
-To further investigate the causal relationship between tweeting and online public interest, we therefore chose to conduct
-a [Granger causality](https://en.wikipedia.org/wiki/Granger_causality) test. "The Granger causality test is a statistical hypothesis test for 
-determining whether one time series is useful in forecasting another". The [null hypothesis](https://www.statsmodels.org/dev/generated/statsmodels.tsa.stattools.grangercausalitytests.html)
+Clearly, a visual inspection of the evolution of tweeting and daily Wikipedia views makes it difficult to assess whether
+Trump causes tweets or the other way around.
+To further investigate the causal relationship between tweeting and online public interest, we therefore chose to
+conduct
+a [Granger causality](https://en.wikipedia.org/wiki/Granger_causality) test. "The Granger causality test is a
+statistical hypothesis test for
+determining whether one time series is useful in forecasting another".
+The [null hypothesis](https://www.statsmodels.org/dev/generated/statsmodels.tsa.stattools.grangercausalitytests.html)
 is that "the the time series the first column is NOT Granger caused by the time series in the other columns".
 
 We conducted two Granger causality tests: "Trump's Granger causes views on Wikipedia" and "Views on Wikipedia Granger
-cause Trump's tweets". 
-Both Granger causality tests are statistically significant at the 5 % threshold: Trump's tweets Granger cause 
+cause Trump's tweets".
+Both Granger causality tests are statistically significant at the 5 % threshold: Trump's tweets Granger cause
 Wikipedia views and vice versa.
 
 How to interpret the fact that the two time series Granger cause each other? As mentioned earlier, Granger causality
 just means that one time series is useful at predicting the other. It doesn't necessarily imply real causality.
- There can therefore be two explanations to our results:
- 
+There can therefore be two explanations to our results:
+
 - sometimes Trump causes tweets, other times public interest causes Trump to tweet;
 - or both time series are actually caused by external factors. Sometimes Trump's reacts faster, and sometimes the public
   get interested first. The varying reaction times could explain the Granger causality results.
@@ -182,19 +207,23 @@ To further investigate whether Trump's tweets cause views, we will focus on his 
 peak in interest (both on Wikipedia and Google).
 The [Causal Impact](https://google.github.io/CausalImpact/CausalImpact.html) library in Python allows us perform a test
 to study the causal effect of Trump's first tweet on the number of Google queries on hydroxychloroquine.
-We are focusing on Google Trends queries, as they allows us to study time series at hourly granularity, unlike Wikipedia.
+We are focusing on Google Trends queries, as they allows us to study time series at hourly granularity, unlike
+Wikipedia.
 To run this analysis we need the following variables:
 
 - y: the number of visits to the the page of hydroxychloroquine (test variable).
 - x: the number of visits to a set of pages (the control variables), which were not affected by the intervention (
   Trump's first tweet).
 
-For the control variables, we picked the time series of the following five topics, which for obvious reasons should not have been affected
-by Trump's tweet: climate, coffee, news, shop and time. 
+For the control variables, we picked the time series of the following five topics, which for obvious reasons should not
+have been affected
+by Trump's tweet: climate, coffee, news, shop and time.
 
 A causal impact analysis for this first tweet corroborates the visual inspection of the Wikipedia time series: the
-peak in interest on hydroxychloroquine preceded Trump's first tweet. His tweet therefore didn't seem to have had a strong impact
-on interest. Note, however, that we used global trends time series. It might be that Trump had a local impact (though probably not
+peak in interest on hydroxychloroquine preceded Trump's first tweet. His tweet therefore didn't seem to have had a
+strong impact
+on interest. Note, however, that we used global trends time series. It might be that Trump had a local impact (though
+probably not
 strong) on Google searches, e.g. in the United States.
 
 As explained earlier, an alternative possibility to explain why online trends time series and Trump's tweets Granger
@@ -221,20 +250,26 @@ The causal impact analysis shows that the intervention on March 16 (the mobility
 perhaps even other events: this period was quite hectic) had a strong impact on Google Trends searches.
 
 In conclusion, Trump's tweets and online Trends are correlated, and both time series contain information that can
-predict the other (cf. Granger causality). A focus on the first tweet suggests that rather than the tweets causing public online interest
-or vice versa, it is quite likely that external events were the real cause of interest. This closer analysis was only conducted on one
-of his tweets and for one topic, however. The results should therefore be interpreted with caution, and a more systematic study should
+predict the other (cf. Granger causality). A focus on the first tweet suggests that rather than the tweets causing
+public online interest
+or vice versa, it is quite likely that external events were the real cause of interest. This closer analysis was only
+conducted on one
+of his tweets and for one topic, however. The results should therefore be interpreted with caution, and a more
+systematic study should
 be done to generalize our observations.
 
 ## Can we Predict Trump's Influence? Or his Tweeting Behaviour?
 
-So far, we have demonstrated the difficulty of establishing a causal link between Trump's tweets and general online trends, or
+So far, we have demonstrated the difficulty of establishing a causal link between Trump's tweets and general online
+trends, or
 vice versa. To shed more light on Trump's influence and on his tweeeting habits, we will conduct the following analyses.
 
-First, we would like to investigate whether we can predict the number of retweets by Trump's followers using variables such as the tweet's sentiment
+First, we would like to investigate whether we can predict the number of retweets by Trump's followers using variables
+such as the tweet's sentiment
 and its topic.
 
-In a second step, we will try to wee whether we can predict the sentiment of Trump's tweets using external signals: the overall sentiment of
+In a second step, we will try to wee whether we can predict the sentiment of Trump's tweets using external signals: the
+overall sentiment of
 American tweets and the rise of Covid cases in the US.
 
 ### Sentiment Analysis of Trump's Tweets
@@ -261,14 +296,16 @@ potential explanations:
 
 <p>"mike pence didn’t have the courage to do what should have been done to protect our country and our constitution  giving states a chance to certify a corrected set of facts  not the fraudulent or inaccurate ones which they were asked to previously certify  usa demands the truth" </p> 
 
-Our strategy for assessing VADER's capability to interpret Trump's sentiment consists in focusing on tweets related to other
+Our strategy for assessing VADER's capability to interpret Trump's sentiment consists in focusing on tweets related to
+other
 topics, for example Joe Biden and Democrats. We expect a negative sentiment given that they are the main target of
 Trump's tweets. Yet,
 when observing the plotted data, while a slight shift in sentiment distribution is evident, the dominant sentiment
 remains neutral or positive. We should therefore be careful in our upcoming analyses, since sarcasm could alter our
 results.
 Interestingly, looking at the graph below, only tweets associated with fake news in relation to COVID-19 exhibit a
-notably strong negative sentiment. This aligns with expectations, since Trump's tweets concerning fake news usually serve
+notably strong negative sentiment. This aligns with expectations, since Trump's tweets concerning fake news usually
+serve
 as attacks directed at Democrats, the establishment, and the media.
 
 <div class="internet">
@@ -277,27 +314,34 @@ as attacks directed at Democrats, the establishment, and the media.
 
 ### What kind of Tweet gets Trump most Retweets?
 
-We have seen that Donald Trump is usually not a trend maker, but rather a trend follower. Still, he does propagate trends
+We have seen that Donald Trump is usually not a trend maker, but rather a trend follower. Still, he does propagate
+trends
 to some extent, at least among his followers.
 Let's use the number of retweets of his declarations to spot which types of tweets are more influential and spread. We
-already noticed that Trump's tweet are compound in sentiments. Let's see what sentiments spread the most (uncertainty bars
+already noticed that Trump's tweet are compound in sentiments. Let's see what sentiments spread the most (uncertainty
+bars
 represent 95 % confidence intervals):
 
 <div class="internet">
     <img src="assets/img/retweet_per_sentiment.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
-According to this plot, tweets with negative sentiment tend to be significantly more retweeted. As shown in part 2, those tweets might
-refer to Democrats or other of his opponents. Let's dive into the average number of retweets  for a few different topic categories:
+According to this plot, tweets with negative sentiment tend to be significantly more retweeted. As shown in part 2,
+those tweets might
+refer to Democrats or other of his opponents. Let's dive into the average number of retweets for a few different topic
+categories:
 
 <div class="internet">
     <img src="assets/img/barplot_per_categories.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
-Surprisingly, talking about Covid makes fewer retweets than his usual subjects, such as the Democrats or Joe Biden. Interestingly though,
+Surprisingly, talking about Covid makes fewer retweets than his usual subjects, such as the Democrats or Joe Biden.
+Interestingly though,
 tweets related to topics commonly associated with fake news (e.g. hydroxychloroquine) get more retweets on average.
-Nonetheless, note that since the distribution of sentiments is different across categories, visually assessing the impact
-of each of them separately is delicate. We can check the significance of the difference of average retweets by looking at
+Nonetheless, note that since the distribution of sentiments is different across categories, visually assessing the
+impact
+of each of them separately is delicate. We can check the significance of the difference of average retweets by looking
+at
 retweets for each category separately :
 
 <div class="internet">
@@ -305,8 +349,9 @@ retweets for each category separately :
 </div>
 
 Looking at this, we wondered: can we predict the impact of Trump's tweet using factors such as being Covid-related,
-fake news-related or the tweet's sentiment ? Moreover, can we disentangle the impact of topic and
-sentiment on the number of retweets?
+fake news-related or the tweet's sentiment ? Moreover, since we saw that both sentiments and topics have an impact on
+the number of retweets in average, can we disentangle the impact of the sentiment and some of our main topics on the
+number of retweets?
 When regressing number retweets versus sentiment types, being fake news-related (talking about one the
 fake news topics we studied) and being related to Covid, we obtain the following results:
 
@@ -385,8 +430,9 @@ media:
 ### Predicting the Sentiment of Trump's Tweets using Exogenous Factors
 
 Now that we identified that some characteristics of Trump's tweet have a direct impact on their spread, we would like to
-see whether we can predict one of these characteristics: the tweet's sentiment. As predictors of the sentiment of Trump's tweet, we use the mean
-of the compounded sentiment score of daily american tweets, and the rise in new COVID-19 cases in the US. 
+see whether we can predict one of these characteristics: the tweet's sentiment. As predictors of the sentiment of
+Trump's tweet, we use the mean
+of the compounded sentiment score of daily american tweets, and the rise in new COVID-19 cases in the US.
 We focused on the timeframe spanning from March 19, 2020 to April 18, 2020.
 
 Initially, we conducted separate regressions, regressing Trump's sentiment on each predictor individually. Both
@@ -438,7 +484,8 @@ Below, we present the regression results in the following table.
 *p-values* : ***p<0.001, **p<0.01 and  *p<0.05
 </div>
 
-We now want to assess the robustness of our logistic regression. Let's compute the confusion Matrix, the ROC curve and the
+We now want to assess the robustness of our logistic regression. Let's compute the confusion Matrix, the ROC curve and
+the
 AUC score:
 
 <div class="results">
@@ -451,35 +498,51 @@ The regression analysis used aggregated daily data, providing a more stable view
 inherent in individual tweets. However, extending this analysis over a more extended period might not work. As time
 progresses, Trump's interest in Covid-related topics declined, resulting in a scarcity of daily data.
 
-Moreover, this logistic regression demonstrated that the sentiment of Trump's tweets, a key factor influencing their retweet,
-can be predicted from exogenous factors. This support the conclusion that Trump is not making trends, but rather following
+Moreover, this logistic regression demonstrated that the sentiment of Trump's tweets, a key factor influencing their
+retweet,
+can be predicted from exogenous factors. This support the conclusion that Trump is not making trends, but rather
+following
 the crowd and its sentiment.
 
 # Conclusion:
-This project studied the impact of Donald Trump's tweets during the Covid epidemic. This was a time of intense internet
-traffic in which Trump was a very special tweeting character. Our main research interest was the impact of his tweets on the spread
-of fake news. Specifically, was Trump a trendmaker or was he only following some hot topics
-already present on Twitter? Put differently, was Trump influential enough to start the spread of a fake news? 
 
-With the Causal Impact tool, we were able to demonstrate no precursor effect of Trump on the online trends of some identified
-fake news. Looking more closely, it would seem that exogenous causes were actually the reason for the rise of interest in
-a topic, and for Trump to tweet on that same topic. 
+This project studied the impact of Donald Trump's tweets during the Covid epidemic. This was a time of intense internet
+traffic in which Trump was a very special tweeting character. Our main research interest was the impact of his tweets on
+the spread
+of fake news. Specifically, was Trump a trendmaker or was he only following some hot topics
+already present on Twitter? Put differently, was Trump influential enough to start the spread of a fake news?
+
+With the Causal Impact tool, we were able to demonstrate no precursor effect of Trump on the online trends of some
+identified
+fake news. Looking more closely, it would seem that exogenous causes were actually the reason for the rise of interest
+in
+a topic, and for Trump to tweet on that same topic.
 
 Following on the interest in fake news, we looked at our research question the other way
 around: what properties of Trump's tweet would make it influential (i.e. being retweeted) and can we predict the
-presence of these properties in tweets based on exogenous factors? We assessed the impact of sentiment and some selected topics on the
-number of retweets. A regression allowed us to disentangle the impact of each on the number of retweets.  We observed a net increase of retweets for negative
-tweets compared to neutral and positive ones. We also showed that some topics spread more easily than others. Finally, we saw that the sentiment
-of Trump's tweets can be fairly well predicted from exogenous data, adding weight to our previously anticipated conclusion:
+presence of these properties in tweets based on exogenous factors? We assessed the impact of sentiment and some selected
+topics on the
+number of retweets. A regression allowed us to disentangle the impact of each on the number of retweets. We observed a
+net increase of retweets for negative
+tweets compared to neutral and positive ones. We also showed that some topics spread more easily than others. Finally,
+we saw that the sentiment
+of Trump's tweets can be fairly well predicted from exogenous data, adding weight to our previously anticipated
+conclusion:
 
-**Donald Trump had some influence on Twitter, particularly among his followers, but no demonstration of genuine large-scale trend making could be made:
+**Donald Trump had some influence on Twitter, particularly among his followers, but no demonstration of genuine
+large-scale trend making could be made:
 he is more likely to have surfed on the trends of the time**
 
-Finally, recall that our study might be more related to current news than it looks at first sight. Since August 24, Donald Trump is back on X (new
-Twitter), showing his [mugface](https://twitter.com/donaldtrump) again as a sign of his return. Since he is running for president
-again we may wonder: is he using the same communication patterns as we found in our study? We leave the question open (for now). In the meantime, 
-while [The Economist](https://www.economist.com/leaders/2023/11/16/donald-trump-poses-the-biggest-danger-to-the-world-in-2024) argues that 
-Trump poses serious threats to world stability, we should probably not worry too much: Trump promises to only be a dictator [on day one](https://eu.usatoday.com/story/news/politics/elections/2023/12/11/donald-trump-dictator-one-day-reelected/71880010007/) !
+Finally, recall that our study might be more related to current news than it looks at first sight. Since August 24,
+Donald Trump is back on X (new
+Twitter), showing his [mugface](https://twitter.com/donaldtrump) again as a sign of his return. Since he is running for
+president
+again we may wonder: is he using the same communication patterns as we found in our study? We leave the question open (
+for now). In the meantime,
+while [The Economist](https://www.economist.com/leaders/2023/11/16/donald-trump-poses-the-biggest-danger-to-the-world-in-2024)
+argues that
+Trump poses serious threats to world stability, we should probably not worry too much: Trump promises to only be a
+dictator [on day one](https://eu.usatoday.com/story/news/politics/elections/2023/12/11/donald-trump-dictator-one-day-reelected/71880010007/) !
 
 Concluding on this wise advice, thank you for reading our data story! We hope you found it interesting!
 
