@@ -268,12 +268,15 @@ generalize our observations.
 
 ## Is Trump's tweets influence predictable?
 
-So far we lack to find a causal link between Trump's tweets and general online trends and vicevrsa. We want now to
-investigate if at least the number of retweets the sentiment of Trump's tweets and can be predicted according to two
-factors that we think are
-relevant.
+So far we demonstrated the difficulty to assess causal links between Trump's tweets and general online trends and
+viceversa. We want now to
+investigate if the number of retweets the sentiment of Trump's tweets and can be predicted according to two exogenous
+factors that
+we think are
+relevant. We will study the topics and sentiment of his tweets with a primary focus on they sentiments. Further, we will
+try to see if we can predict the tweets' sentiments from some outside signals.
 
-### Step 1: Sentiment analysis of Trump's tweets
+### Sentiment analysis of Trump's tweets
 
 <div class="internet">
     <img src="assets/img/sentiment_pie_chart.png" style="display: block; margin: 0 auto; width: 40%;"/>
@@ -287,15 +290,22 @@ Our findings indicate a predominately positive sentiment in Trump's tweets. This
 potential explanations:
 
 - As a politician, Trump might be inclined to emphasize positive events over negative ones in his tweets. Highlighting
-  favorable occurrences concerning himself could serve as a making a case for voting himself.
+  favorable occurrences concerning himself or his voters could serve as a making a case for voting himself, such as :
+
+<p>The 75,000,000 great American Patriots who voted for me, AMERICA FIRST, and MAKE AMERICA GREAT AGAIN, will have a GIANT VOICE long into the future. They will not be disrespected or treated unfairly in any way, shape or form!!!</p> 
+
 - The VADER lexicon might be inaccurate capturing the sentiment the sarcastic tweets. Despite VADER's focus on social
-  media language, discerning sarcasm remains a challenging task, potentially introducing biases in the analysis.
+  media language, discerning sarcasm remains a challenging task, potentially introducing biases in the analysis. As an
+  example, the following tweet is considered positive by VADER:
+
+<p>mike pence didn’t have the courage to do what should have been done to protect our country and our constitution  giving states a chance to certify a corrected set of facts  not the fraudulent or inaccurate ones which they were asked to previously certify  usa demands the truth </p> 
 
 Our strategy to assess VADER's capability to interpret Trump's sentiment consists on focusing on tweets related to other
-topics, for example Joe
-Biden and Democrats. We expect a negative sentiment given that they are the main target of Trump's tweets. Yet,
+topics, for example Joe Biden and Democrats. We expect a negative sentiment given that they are the main target of
+Trump's tweets. Yet,
 upon observing the plotted data, while a slight shift in sentiment distribution is evident, the dominant sentiment
-remains positive. We should be careful further proceeding in our analysis since sarcasm could alter our results.
+remains neutral or positive. We should be careful further proceeding in our analysis since sarcasm could alter our
+results.
 Interestingly, looking at the graph below, only tweets associated with fake news in relation to COVID-19 exhibit a
 notably strong negative sentiment. This aligns with expectations since Trump's tweets concerning fake news usually serve
 as attacks directed at Democrats, the establishment, and the media.
@@ -304,41 +314,40 @@ as attacks directed at Democrats, the establishment, and the media.
     <img src="assets/img/stacked_plot_sentiment_categories.png" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
 
-## Step 2: Study what makes Donald Trump retweeted?
+### What makes Donald Trump retweeted?
 
 We have seen than Donald Trump is usually not a trendmaker, but more of a trendfollower. Still, he propagates the trend.
 Let's use the number of retweets of his declarations to spot what type of tweets are more influencial and spread. We
-already noticed that Trump's tweet are compound in sentiments (% should be in Trump's tweet presentation). What
-sentiments spread the most?
+already noticed that Trump's tweet are compound in sentiments. Let's see what sentiments spread the most:
 
 <div class="internet">
     <img src="assets/img/retweet_per_sentiment.png" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
 
 According to this, negative sentiment tends to be significantly more retweeted. As shown in part 2, those tweets might
-refer to democrats or others of his ennemies. What happens when we dive into different topics categories, the following
+refer to democrats or others of his ennemies. We can dive into different topics categories, the following
 plots shows the average number of retweets for some broad categories we identified:
 
 <div class="internet">
     <img src="assets/img/barplot_per_categories.png" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
 
-Surprisingly, talking about Covid makes less retweets than his usual subjects such as democrats and Joe Biden. However,
-when we identify a topic of fake news in the tweet, this is related to more retweets in average. And we can check this
-by looking at retweets for each category separately :
+Surprisingly, talking about Covid makes fewer retweets than his usual subjects such as democrats and Joe Biden. However,
+when we identify a topic associated to known fake news in the tweet, this is related to more retweets in average. And we
+can check the significance of the difference of average retweets by looking at retweets for each category separately :
 
 <div class="internet">
     <img src="assets/img/retweets_per_categories.png" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
 
-Looking at this, we wondered, can we predict the number of retweets Trump can expect by talking about known fake news
-with
-some sentiments? When regressing number retweets versus sentiment types, being fake news related (talking about one the
-fake news we studied) and being related to covid, we obtain:
+Looking at this, we wondered, can we predict the impact of Trump's tweet focusing on our main interests : being Covid
+related, fake news related and adding the tweet's sentiment ?
+When regressing number retweets versus sentiment types, being fake news related (talking about one the
+fake news topics we studied) and being related to covid, we obtain:
 
 ![equation](https://latex.codecogs.com/png.image?\dpi{160}y_i=\beta_0&plus;\beta_1&space;x_{fake-news-related}&plus;\beta_2&space;x_{covid-related}&plus;\beta_3&space;x_{sentiment-type})
 
-Here, intercept corresponds to the zero class, being not fake news related, not covid and related and neutral.
+Here, intercept corresponds to the zero class, being not fake news related, not covid-related and neutral.
 
 |                  |       Coef       | Std error | 
 |:-----------------|:----------------:|:---------:|
@@ -359,9 +368,20 @@ From this, we can conclude that :
 - Negative sentiment in tweets spread significantly more than neutral ones
 - However, we can not say that positive ones spread either faster either slower than neutral ones
 
-### Step 3: Logisisitc regression on Trump's sentiment
+While not allowing a complete conclusion, these results support two classic opinions about information spread on social
+media:
 
-As predictors of Trump's tweets sentiment we use the mean of compounded score of daily american tweets, and the rise in
+- Tweets with identified negative sentiment spread more than those with positive/neutral ones, which seems opposite to
+  the New York Times
+  conclusion : [Good News Beats Bad on Social Networks](https://www.nytimes.com/2013/03/19/science/good-news-spreads-faster-on-twitter-and-facebook.html)
+- Talking about fake news tends to create more impact than truth, consistent with the
+  study: [On Twitter, false news travels faster than true stories](https://news.mit.edu/2018/study-twitter-false-news-travels-faster-true-stories-0308)
+
+### Logistic regression on Trump's sentiment
+
+Now that we identified that some components of Trump's tweet have a direct impact of their spread, we would like to
+predict those components by focusing on the tweets' sentiment. As predictors of Trump's tweets sentiment we use the mean
+of compounded score of daily american tweets, and the rise in
 new COVID-19 cases in US. Our focus was on a specific timeframe spanning from March 19, 2020 to April 18, 2020.
 
 Initially, we conducted separate regressions, regressing Trump's sentiment on each predictor individually. Both
@@ -373,6 +393,7 @@ Below, we present the regression results in the following table.
 
 #### Logistic regression (Trump's sentiment ~ general sentiment + increment of new cases)
 
+![equation](https://latex.codecogs.com/png.image?\dpi{120}&space;y(Trump's&space;sentiment)=beta_0&plus;\beta_1&space;x_{general-sentiment}&plus;\beta_2{increment_of_new_cases})
 
 |                    |    Coef     | Std error | 
 |:-------------------|:-----------:|:---------:|
@@ -396,3 +417,8 @@ The regression analysis used aggregated daily data, providing a more stable view
 inherent in individual tweets. However, extending this analysis over a more extended period might not work. As time
 progresses, Trump's interest in Covid topic decline, resulting in a scarcity of daily data.
 
+Moreover, this logistic regression demonstrated that Trump's tweets sentiments, which have a key impact of their
+influence can be predicted from exogenous factors. This support the conclusion that Trump is not making trend but follow
+the crowd and its sentiment.
+
+# Conclusion:
