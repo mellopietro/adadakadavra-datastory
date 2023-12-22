@@ -479,7 +479,7 @@ he is more likely to have surfed on the trends of the time**
 Finally, recall that our study might be more related to current news than it looks at first sight. Since August 24, Donald Trump is back on X (new
 Twitter), showing his [mugface](https://twitter.com/donaldtrump) again as a sign of his return. Since he is running for president
 again we may wonder: is he using the same communication patterns as we found in our study? We leave the question open (for now). In the meantime, 
-while, [The Economist](https://www.economist.com/leaders/2023/11/16/donald-trump-poses-the-biggest-danger-to-the-world-in-2024) advocates that 
+while [The Economist](https://www.economist.com/leaders/2023/11/16/donald-trump-poses-the-biggest-danger-to-the-world-in-2024) argues that 
 Trump poses serious threats to world stability, we should probably not worry too much: Trump promises to only be a dictator [on day one](https://eu.usatoday.com/story/news/politics/elections/2023/12/11/donald-trump-dictator-one-day-reelected/71880010007/) !
 
 Concluding on this wise advice, thank you for reading our data story! We hope you found it interesting!
