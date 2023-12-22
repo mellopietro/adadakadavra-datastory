@@ -310,17 +310,17 @@ with
 some sentiments? When regressing number retweets versus sentiment types, being fake news related (talking about one the
 fake news we studied) and being related to covid, we obtain:
 
-$$ y_i = \beta_0 + \beta_1 x_{fake_news_related}+ \beta_2 x_{covid_related}+ \beta_3 x_{sentiment_type}$$
+![equation](https://latex.codecogs.com/png.image?\dpi{110}y_i=\beta_0&plus;\beta_1&space;x_{fake_news_related}&plus;\beta_2&space;x_{covid_related}&plus;\beta_3&space;x_{sentiment_type})
 
 Here, intercept corresponds to the zero class, being not fake news related, not covid and related and neutral. 
 
 |                               |       Coef       | Std error | 
 |:------------------------------|:----------------:|:---------:|
 | Intercept                     | 2.098e+04 (***)  |  295.588  |
- C(covid_related)[T.True]       | -4894.4386 (***) |  736.312  | 
-| C(is_fake_news)[T.True]      | 7912.5949 (***)  | 1933.190  
-| C(NEGATIVE)[T.True] | 2782.3507 (***)  |  417.806  |
-| C(POSITIVE)[T.True]  |    109.9182      |  376.424  |
+ C(covid_related)      | -4894.4386 (***) |  736.312  | 
+| C(is_fake_news)     | 7912.5949 (***)  | 1933.190  
+| C(NEGATIVE) | 2782.3507 (***)  |  417.806  |
+| C(POSITIVE)  |    109.9182      |  376.424  |
 | R^2                           |      0.009       |           |
 
 *p-values* : ***p<0.001, **p<0.01 and  *p<0.05
@@ -360,6 +360,7 @@ Below, we present the regression results in the following table.
 | R^2                           |       ?       |           |
 
 *p-values* : ***p<0.001, **p<0.01 and  *p<0.05
+
 We now want to assess the robustness of our logistic regression, we compute the confusion Matrix, the ROC curve and the
 AUC score. a.
 
