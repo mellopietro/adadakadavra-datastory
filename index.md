@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Trump and COVID19
+title: Trump and the COVID19 Infodemic
 subtitle: Adadakadavra Team
 ---
 
