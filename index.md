@@ -62,7 +62,7 @@ one of the most followed account (81 millions followers in 2020). If you don't r
 refresher :
 
 <div class="internet">
-    <img src="assets/img/trump_sample_tweet.jpg" style="display: block; margin: 0 auto; width: 70%;"/>
+    <img src="assets/img/trump_sample_tweet.jpg" style="display: block; margin: 0 auto; width: 55%;"/>
 </div>
 
 We all know Donald Trump spread fake news, especially on Twitter, his favorite communication channel. His tweets
