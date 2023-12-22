@@ -309,7 +309,9 @@ Looking at this, we wondered, can we predict the number of retweets Trump can ex
 with
 some sentiments? When regressing number retweets versus sentiment types, being fake news related (talking about one the
 fake news we studied) and being related to covid, we obtain:
+
 $$y_i = \Beta_0 + \Beta_1x_{fake_news_related}+ \Beta_2x_{covid_related}+ \Beta_3x_{sentiment_type}$$
+
 Here, intercept corresponds to the zero class, being not fake news related, not covid and related and neutral. 
 
 |                               |       Coef       | Std error | 
@@ -319,7 +321,7 @@ Here, intercept corresponds to the zero class, being not fake news related, not 
 | C(is_fake_news)[T.True]      | 7912.5949 (***)  | 1933.190  
 | C(NEGATIVE)[T.True] | 2782.3507 (***)  |  417.806  |
 | C(POSITIVE)[T.True]  |    109.9182      |  376.424  |
-| R^2                           |      0.009       |           | |
+| R^2                           |      0.009       |           |
 
 *p-values* : ***p<0.001, **p<0.01 and  *p<0.05
 
