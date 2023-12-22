@@ -136,17 +136,20 @@ tweets to be mainly related to his political campaign also in covid. Huge part o
 talking about the other political faction rather than the urgent problems of the nation. For this reason an automatic
 algorithm does not fit very well the purpose of identifying tweets related to fake news and we selected them manually.
 
-
 ## Trump the Trend Maker or Trump the Follower, that is the Question! Let's study his favorite fake news
 
-Next, let's dive into the meat of our problem, with one of our main research questions: is there a causal relationship between Trump's tweets and the number
-of visits on some Covid-related topics, e.g. hydroxychloroquine on Wikipedia? During the COVID-19 period, Trump claimed that hydroxychloroquine was a cure for COVID-19. 
-This claim was not supported by scientific evidence, however, making it more of a fake news really. 
-This was further motivation to investigate this topic in particular: Trump, an actor of the infodemic or not? Let's find out!
+Next, let's dive into the meat of our problem, with one of our main research questions: is there a causal relationship
+between Trump's tweets and the number
+of visits on some Covid-related topics, e.g. hydroxychloroquine on Wikipedia? During the COVID-19 period, Trump claimed
+that hydroxychloroquine was a cure for COVID-19.
+This claim was not supported by scientific evidence, however, making it more of a fake news really.
+This was further motivation to investigate this topic in particular: Trump, an actor of the infodemic or not? Let's find
+out!
 
 ### Evolution of Online Trends and Trump's Tweeting: a first Graphical Inspection
 
-To answer our question, let's start by graphically studying the evolution of the number of queries/visits on the topic of hydroxychloroquine to assess whether
+To answer our question, let's start by graphically studying the evolution of the number of queries/visits on the topic
+of hydroxychloroquine to assess whether
 Trump's tweets had an impact on them.
 
 <div class="internet">
@@ -159,22 +162,28 @@ mid-March). But then, do tweets cause views or the other way around?
 
 ### Granger causality - Do Trump's Tweets give useful Information for Predicting Online Interest?
 
-Clearly, a visual inspection of the evolution of tweeting and daily Wikipedia views makes it difficult to assess whether Trump causes tweets or the other way around.
-To further investigate the causal relationship between tweeting and online public interest, we therefore chose to conduct
-a [Granger causality](https://en.wikipedia.org/wiki/Granger_causality) test. "The Granger causality test is a statistical hypothesis test for 
-determining whether one time series is useful in forecasting another". The [null hypothesis](https://www.statsmodels.org/dev/generated/statsmodels.tsa.stattools.grangercausalitytests.html)
+Clearly, a visual inspection of the evolution of tweeting and daily Wikipedia views makes it difficult to assess whether
+Trump causes tweets or the other way around.
+To further investigate the causal relationship between tweeting and online public interest, we therefore chose to
+conduct
+a [Granger causality](https://en.wikipedia.org/wiki/Granger_causality) test. "The Granger causality test is a
+statistical hypothesis test for
+determining whether one time series is useful in forecasting another".
+The [null hypothesis](https://www.statsmodels.org/dev/generated/statsmodels.tsa.stattools.grangercausalitytests.html)
 is that "the the time series the first column is NOT Granger caused by the time series in the other columns".
 
 We conducted two Granger causality tests: "Trump's Granger causes views on Wikipedia" and "Views on Wikipedia Granger
-cause Trump's tweets". 
-Both Granger causality tests have at least one [lagged value]([Wikipedia](https://en.wikipedia.org/wiki/Granger_causality)) 
-for which the p-value is below the threshold of 0.05. Both tests are therefore statistically signifcant: Trump's tweets Granger cause 
+cause Trump's tweets".
+Both Granger causality tests have at least
+one [lagged value]([Wikipedia](https://en.wikipedia.org/wiki/Granger_causality))
+for which the p-value is below the threshold of 0.05. Both tests are therefore statistically signifcant: Trump's tweets
+Granger cause
 Wikipedia views and vice versa.
 
 How to interpret the fact that the two time series Granger cause each other? As mentioned earlier, Granger causality
 just means that one time series is useful at predicting the other. It doesn't necessarily imply real causality.
- There can therefore be two explanations to our results:
- 
+There can therefore be two explanations to our results:
+
 - sometimes Trump causes tweets, other times public interest causes Trump to tweet;
 - or both time series are actually caused by external factors. Sometimes Trump's reacts faster, and sometimes the public
   get interested first. The varying reaction times could explain the Granger causality results.
@@ -185,19 +194,23 @@ To further investigate whether Trump's tweets cause views, we will focus on his 
 peak in interest (both on Wikipedia and Google).
 The [Causal Impact](https://google.github.io/CausalImpact/CausalImpact.html) library in Python allows us perform a test
 to study the causal effect of Trump's first tweet on the number of Google queries on hydroxychloroquine.
-We are focusing on Google Trends queries, as they allows us to study time series at hourly granularity, unlike Wikipedia.
+We are focusing on Google Trends queries, as they allows us to study time series at hourly granularity, unlike
+Wikipedia.
 To run this analysis we need the following variables:
 
 - y: the number of visits to the the page of hydroxychloroquine (test variable).
 - x: the number of visits to a set of pages (the control variables), which were not affected by the intervention (
   Trump's first tweet).
 
-For the control variables, we picked the time series of the following five topics, which for obvious reasons should not have been affected
-by Trump's tweet: climate, coffee, news, shop and time. 
+For the control variables, we picked the time series of the following five topics, which for obvious reasons should not
+have been affected
+by Trump's tweet: climate, coffee, news, shop and time.
 
 A causal impact analysis for this first tweet corroborates the visual inspection of the Wikipedia time series: the
-peak in interest on hydroxychloroquine preceded Trump's first tweet. His tweet therefore didn't seem to have had a strong impact
-on interest. Note, however, that we used global trends time series. It might be that Trump had a local impact (though probably not
+peak in interest on hydroxychloroquine preceded Trump's first tweet. His tweet therefore didn't seem to have had a
+strong impact
+on interest. Note, however, that we used global trends time series. It might be that Trump had a local impact (though
+probably not
 strong) on Google searches, e.g. in the United States.
 
 As explained earlier, an alternative possibility to explain why online trends time series and Trump's tweets Granger
@@ -224,9 +237,12 @@ The causal impact analysis shows that the intervention on March 16 (the mobility
 perhaps even other events: this period was quite hectic) had a strong impact on Google Trends searches.
 
 In conclusion, Trump's tweets and online Trends are correlated, and both time series contain information that can
-predict the other (cf. Granger causality). A focus on the first tweet suggests that rather than the tweets causing public online interest
-or vice versa, it is quite likely that external events were the real cause of interest. This closer analysis was only conducted on one
-of his tweets and for one topic, however. The results should therefore be interpreted with caution, and a more systematic study should
+predict the other (cf. Granger causality). A focus on the first tweet suggests that rather than the tweets causing
+public online interest
+or vice versa, it is quite likely that external events were the real cause of interest. This closer analysis was only
+conducted on one
+of his tweets and for one topic, however. The results should therefore be interpreted with caution, and a more
+systematic study should
 be done to generalize our observations.
 
 ## Is Trump's tweets influence predictable?
@@ -255,13 +271,13 @@ potential explanations:
 - As a politician, Trump might be inclined to emphasize positive events over negative ones in his tweets. Highlighting
   favorable occurrences concerning himself or his voters could serve as a making a case for voting himself, such as :
 
-<p>"The 75,000,000 great American Patriots who voted for me, AMERICA FIRST, and MAKE AMERICA GREAT AGAIN, will have a GIANT VOICE long into the future. They will not be disrespected or treated unfairly in any way, shape or form!!!"</p> 
+<p>The 75,000,000 great American Patriots who voted for me, AMERICA FIRST, and MAKE AMERICA GREAT AGAIN, will have a GIANT VOICE long into the future. They will not be disrespected or treated unfairly in any way, shape or form!!!</p> 
 
 - The VADER lexicon might be inaccurate capturing the sentiment the sarcastic tweets. Despite VADER's focus on social
   media language, discerning sarcasm remains a challenging task, potentially introducing biases in the analysis. As an
   example, the following tweet is considered positive by VADER:
 
-<p>"mike pence didn’t have the courage to do what should have been done to protect our country and our constitution  giving states a chance to certify a corrected set of facts  not the fraudulent or inaccurate ones which they were asked to previously certify  usa demands the truth" </p> 
+<p>mike pence didn’t have the courage to do what should have been done to protect our country and our constitution  giving states a chance to certify a corrected set of facts  not the fraudulent or inaccurate ones which they were asked to previously certify  usa demands the truth </p> 
 
 Our strategy to assess VADER's capability to interpret Trump's sentiment consists on focusing on tweets related to other
 topics, for example Joe Biden and Democrats. We expect a negative sentiment given that they are the main target of
@@ -367,7 +383,6 @@ Below, we present the regression results in the following table.
 | Intercept          |   -1.2070   |   0.679   |
  people_sent        | 4.8260 (*)  |   2.069   | 
 | increase_new_cases | -1.9933 (*) |   0.875   
-| R^2                |      ?      |           |
 
 *p-values* : ***p<0.001, **p<0.01 and  *p<0.05
 
@@ -389,6 +404,7 @@ influence can be predicted from exogenous factors. This support the conclusion t
 the crowd and its sentiment.
 
 # Conclusion:
+
 This project studied the impact of Donald Trump's tweet during the covid epidemic. This was a time of intense internet
 traffic in which Trump was a very specific tweeting character. Our main research interest was its impact on the spread
 of fakenews. Especially, was Trump a trendmaker or was he only following some hot topics
