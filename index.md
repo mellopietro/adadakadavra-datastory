@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: Trump and COVID19
 subtitle: Adadakadavra Team
 ---
