@@ -7,7 +7,7 @@ subtitle: Adadakadavra Team
 <div class="title-background">
     <img src="assets/img/title.jpg" style="display: block; margin: 0 auto; width: 100%;"/>
 </div>
-
+&nbsp;
 # Context
 
 Remember the beginning of 2020, Covid spread like an unprecedent wildfire. The disease was unkwnon, not understood
@@ -57,7 +57,7 @@ one of the most followed account (81 millions followers in 2020). If you don't r
 refresher :
 
 <div class="internet">
-    <img src="assets/img/trump_sample_tweet.png" style="display: block; margin: 0 auto; width: 80%;"/>
+    <img src="assets/img/trump_sample_tweet.png" style="display: block; margin: 0 auto; width: 35%;"/>
 </div>
 
 We all know Donald Trump has spread fake news, especially on Twitter, his favorite communication channel. His tweets
@@ -150,7 +150,7 @@ To answer our question, let's start by graphically studying the evolution of the
 Trump's tweets had an impact on them.
 
 <div class="internet">
-    <img src="assets/img/hydro_timeseries_weekly.png" style="display: block; margin: 0 auto; width: 100%;"/>
+    <img src="assets/img/hydro_timeseries_weekly.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
 As we can see from the graph above, Trump's tweets on hydroxychloroquine seem to precede certain attention
@@ -217,7 +217,7 @@ We therefore tried to reconduct a causal impact analysis, considering March 16, 
 A.M. in the USA) as our intervention time. The resulting plot can be seen in the following Figure.
 
 <div class="internet">
-    <img src="assets/img/causal_plot.png" style="display: block; margin: 0 auto; width: 100%;"/>
+    <img src="assets/img/causal_plot.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
 The causal impact analysis shows that the intervention on March 16 (the mobility restrictions, the publication or both -
@@ -242,7 +242,7 @@ try to see if we can predict the tweets' sentiments from some outside signals.
 ### Sentiment analysis of Trump's tweets
 
 <div class="internet">
-    <img src="assets/img/sentiment_pie_chart.png" style="display: block; margin: 0 auto; width: 40%;"/>
+    <img src="assets/img/sentiment_pie_chart.png" style="display: block; margin: 0 auto; width: 30%;"/>
 </div>
 
 To comprehend the general sentiment within Trump's tweets, we utilized VADER, a rule-based sentiment analyzer specific
@@ -274,7 +274,7 @@ notably strong negative sentiment. This aligns with expectations since Trump's t
 as attacks directed at Democrats, the establishment, and the media.
 
 <div class="internet">
-    <img src="assets/img/stacked_plot_sentiment_categories.png" style="display: block; margin: 0 auto; width: 100%;"/>
+    <img src="assets/img/stacked_plot_sentiment_categories.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
 ### What makes Donald Trump retweeted?
@@ -284,7 +284,7 @@ Let's use the number of retweets of his declarations to spot what type of tweets
 already noticed that Trump's tweet are compound in sentiments. Let's see what sentiments spread the most:
 
 <div class="internet">
-    <img src="assets/img/retweet_per_sentiment.png" style="display: block; margin: 0 auto; width: 100%;"/>
+    <img src="assets/img/retweet_per_sentiment.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
 According to this, negative sentiment tends to be significantly more retweeted. As shown in part 2, those tweets might
@@ -292,7 +292,7 @@ refer to democrats or others of his ennemies. We can dive into different topics 
 plots shows the average number of retweets for some broad categories we identified:
 
 <div class="internet">
-    <img src="assets/img/barplot_per_categories.png" style="display: block; margin: 0 auto; width: 100%;"/>
+    <img src="assets/img/barplot_per_categories.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
 Surprisingly, talking about Covid makes fewer retweets than his usual subjects such as democrats and Joe Biden. However,
@@ -303,7 +303,7 @@ of them separately is delicate. And we can check the significance of the differe
 retweets for each category separately :
 
 <div class="internet">
-    <img src="assets/img/retweets_per_categories.png" style="display: block; margin: 0 auto; width: 100%;"/>
+    <img src="assets/img/retweets_per_categories.png" style="display: block; margin: 0 auto; width: 80%;"/>
 </div>
 
 Looking at this, we wondered, can we predict the impact of Trump's tweet focusing on our main interests : being Covid
@@ -312,20 +312,60 @@ sentiments on the number of retweets?
 When regressing number retweets versus sentiment types, being fake news related (talking about one the
 fake news topics we studied) and being related to covid, we obtain:
 
-![equation](https://latex.codecogs.com/png.image?\dpi{160}y_i=\beta_0&plus;\beta_1&space;x_{fake-news-related}&plus;\beta_2&space;x_{covid-related}&plus;\beta_3&space;x_{sentiment-type})
+<div style="text-align: center;">
+  <img src="https://latex.codecogs.com/png.image?\dpi{160}y_i=\beta_0+\beta_1&space;x_{fake-news-related}+\beta_2&space;x_{covid-related}+\beta_3&space;x_{sentiment-type}" alt="equation">
+</div>
+
 
 Here, intercept corresponds to the zero class, being not fake news related, not covid-related and neutral.
 
-|                  |       Coef       | Std error | 
-|:-----------------|:----------------:|:---------:|
-| Intercept        | 2.098e+04 (***)  |  295.588  |
- C(covid_related) | -4894.4386 (***) |  736.312  | 
-| C(is_fake_news)  | 7912.5949 (***)  | 1933.190  
-| C(NEGATIVE)      | 2782.3507 (***)  |  417.806  |
-| C(POSITIVE)      |     109.9182     |  376.424  |
-| R^2              |      0.009       |           |
+<div style="margin: auto; width: 50%;">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Coef</th>
+        <th>Std error</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Intercept</td>
+        <td>2.098e+04 (***)</td>
+        <td>295.588</td>
+      </tr>
+      <tr>
+        <td>C(covid_related)</td>
+        <td>-4894.4386 (***)</td>
+        <td>736.312</td>
+      </tr>
+      <tr>
+        <td>C(is_fake_news)</td>
+        <td>7912.5949 (***)</td>
+        <td>1933.190</td>
+      </tr>
+      <tr>
+        <td>C(NEGATIVE)</td>
+        <td>2782.3507 (***)</td>
+        <td>417.806</td>
+      </tr>
+      <tr>
+        <td>C(POSITIVE)</td>
+        <td>109.9182</td>
+        <td>376.424</td>
+      </tr>
+      <tr>
+        <td>R^2</td>
+        <td>0.009</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+    <br>
+  *p-values* : ***p<0.001, **p<0.01 and  *p<0.05
+</div>
 
-*p-values* : ***p<0.001, **p<0.01 and  *p<0.05
+
 
 From this, we can conclude that :
 
@@ -360,16 +400,45 @@ Below, we present the regression results in the following table.
 
 #### Logistic regression (Trump's sentiment ~ general sentiment + increment of new cases)
 
-![equation](https://latex.codecogs.com/png.image?\dpi{130}&space;y(Trump's-sentiment)=\beta_0&plus;\beta_1&space;x_{general-sentiment}&plus;\beta_2x_{increment-of-new-cases})
-
-|                    |    Coef     | Std error | 
-|:-------------------|:-----------:|:---------:|
-| Intercept          |   -1.2070   |   0.679   |
- people_sent        | 4.8260 (*)  |   2.069   | 
-| increase_new_cases | -1.9933 (*) |   0.875   
-| R^2                |      ?      |           |
-
+<div style="text-align: center;">
+  <img src="https://latex.codecogs.com/png.image?\dpi{130}&space;y(Trump's-sentiment)=\beta_0&plus;\beta_1&space;x_{general-sentiment}&plus;\beta_2x_{increment-of-new-cases}" alt="equation">
+</div>
+<div style="margin: auto; width: 50%;">
+<br>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Coef</th>
+      <th>Std error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>-1.2070</td>
+      <td>0.679</td>
+    </tr>
+    <tr>
+      <td>people_sent</td>
+      <td>4.8260 (*)</td>
+      <td>2.069</td>
+    </tr>
+    <tr>
+      <td>increase_new_cases</td>
+      <td>-1.9933 (*)</td>
+      <td>0.875</td>
+    </tr>
+    <tr>
+      <td>R^2</td>
+      <td>?</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<br>
 *p-values* : ***p<0.001, **p<0.01 and  *p<0.05
+</div>
 
 We now want to assess the robustness of our logistic regression, we compute the confusion Matrix, the ROC curve and the
 AUC score. a.
