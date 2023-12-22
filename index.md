@@ -42,11 +42,10 @@ A linear regression analysis supports this observation. When regressing the numb
 spent at home, the weekends exhibit a substantially higher coefficient of 2.52, in contrast to the coefficient of 0.84
 observed during the week.
 
-Main area of searched topics has been studied, you can have a look to : [Manoel et al.](https://arxiv.org/abs/2005.08505) . But internet traffic during covid time was
-not only made of cooking recipes and cats, it also was a proper time for fake news propagation, part of the infodemic. The ancestor of X, Twitter was one of the biggest place to propagate information, especially when
-everything was changing as fast as the premise of the covid crisis. We all know that not all people have the same voice
-on Twitter, few of them are considered to be the most influential individuals on the network. If you had to bet on of
-person to be influential on Twitter, who would it be?
+The evolution of the main topics searched for online during the pandemic has already been studied, e.g. by [Manoel et al.](https://arxiv.org/abs/2005.08505) . But internet traffic during Covid was
+not only about cooking recipes and cats: it was also a great time to propagate fake news, what the [WHO](https://www.who.int/health-topics/infodemic#tab=tab_1) called an infodemic. The predecessor of X, Twitter, was one of the biggest place to propagate information, especially in quickly changing times such as the Covid pandemic. We all know that not all people have the same voice
+on Twitter, and few of them can be considered to be among the most influential individuals on the network. If you had to bet on a
+person to be particularly influential on Twitter, who would it be?
 
 **Take a few seconds and answer to yourself, who would it be?**
 
