@@ -40,7 +40,7 @@ weekdays were still occupied by telecommuting activities.
 
 A linear regression analysis supports this observation. When regressing the number of web searches against the time
 spent at home, the weekends exhibit a substantially higher coefficient of 2.52, in contrast to the coefficient of 0.84
-observed during the week. [Not sure of the method here?]
+observed during the week.
 
 Main area of searched topics has been studied, you can have a look to : [Manoel et al.](https://arxiv.org/abs/2005.08505) . But internet traffic during covid time was
 not only made of cooking recipes and cats, it also was a proper time for fake news propagation, part of the infodemic. The ancestor of X, Twitter was one of the biggest place to propagate information, especially when
