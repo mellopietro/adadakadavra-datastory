@@ -472,7 +472,7 @@ around: what properties of Trump's tweet would make it influential (i.e. being r
 presence of these properties in tweets based on exogenous factors? We assessed the impact of sentiment and some selected topics on the
 number of retweets. A regression allowed us to disentangle the impact of each on the number of retweets.  We observed a net increase of retweets for negative
 tweets compared to neutral and positive ones. We also showed that some topics spread more easily than others. Finally, we saw that the sentiment
-of Trump's tweets can be fairly well predicted from exogenous data, adding weight on our already sketched conclusion:
+of Trump's tweets can be fairly well predicted from exogenous data, adding weight to our previously anticipated conclusion:
 
 **Donald Trump had some influence on Twitter, particularly among his followers, but no demonstration of genuine large-scale trend making could be made:
 he is more likely to have surfed on the trends of the time**
