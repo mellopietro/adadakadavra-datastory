@@ -310,7 +310,7 @@ with
 some sentiments? When regressing number retweets versus sentiment types, being fake news related (talking about one the
 fake news we studied) and being related to covid, we obtain:
 
-$$y_i = \Beta_0 + \Beta_1x_{fake_news_related}+ \Beta_2x_{covid_related}+ \Beta_3x_{sentiment_type}$$
+$$ y_i = \beta_0 + \beta_1 x_{fake_news_related}+ \beta_2 x_{covid_related}+ \beta_3 x_{sentiment_type}$$
 
 Here, intercept corresponds to the zero class, being not fake news related, not covid and related and neutral. 
 
@@ -357,7 +357,7 @@ Below, we present the regression results in the following table.
 | Intercept                     |    -1.2070    |  0.679  |
  people_sent       |  4.8260 (*)   |  2.069  | 
 | increase_new_cases      |  -1.9933 (*)  | 0.875
-| R^2                           |       ?       |           | |
+| R^2                           |       ?       |           |
 
 *p-values* : ***p<0.001, **p<0.01 and  *p<0.05
 We now want to assess the robustness of our logistic regression, we compute the confusion Matrix, the ROC curve and the
